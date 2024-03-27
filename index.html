@@ -5,8 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href = "style.css">
+    <script src = "scripts/main.js"></script>
 </head>
 <body>
+    <header>
+        <noscript>
+            <img src = "images/No_js_err.png">
+        </noscript>
+        <nav>
+            
+            <div class = "link_container" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')">
+                <a href = "index.html">Главная</a>
+            </div>
+            <div class = "link_container" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')">
+                <a href = "pages/about.html" > О нас</a>
+            </div>
+            <div class = "link_container">
+                <a href = "pages/reviews.html">Отзывы</a>
+            </div>
+            <div class = "link_container">
+                <a href = "pages/contacts.html">Контакты</a>
+            </div>
+
+            <a id = "login">Авторизоваться</a>
+        </nav>
+        
+        <div class = "banner">
+            <div class = "sub_menus">
+                <div id = "main_sub_menu" class = "sub_menu">
+                    <a> Экспедиции</a>
+                    <a> Галерея</a>
+                    <a> Оборудование</a>
+                </div>
+                <div id = "about_sub_menu" class = "sub_menu">
+                    <a> Основатели</a>
+                    <a> Кураторы</a>
+                    <a> Команда</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
     
 </body>
 </html>
