@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Bahnschrift;
+    src: url("fonts/Bahnschrift.ttf");
+}
+
+*{
+    font-family: 'Bahnschrift';
+}
+body{
+    background-color: #1E1E1E;
+}
+nav a{
+    margin-left:5%;
+    background-color: #AEAEAE;
+    border-radius: 10%;
+    font-size:25px;
+}
+.banner{
+    background-image: url("images/main_background.png");
+    width:100%;
+    height:676px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
