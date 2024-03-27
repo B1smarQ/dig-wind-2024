@@ -11,7 +11,7 @@ body{
 }
 nav{
     display: flex;
-    justify-items: left;
+    
 }
 
 .banner{
@@ -32,7 +32,7 @@ nav{
     min-width: 120px;
     min-height:50px;
     background-color: #191F23;
-    margin-left: 5%;
+    margin-left: 5vw;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     font-size:25px;
@@ -65,12 +65,10 @@ a:visited{
     background-color: #0c0f11c2;
     visibility: hidden;
     border-radius: 15px;
-    min-width: 120px;
-    
     display: flex;
     flex-direction: column;
     justify-items: left;
-    margin-left:5%;
+    margin-left:3vw;
     font-size:25px;
 }
 .sub_menu >*{
