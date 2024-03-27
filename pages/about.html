@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href = "../style.css">
+    <script src = "../scripts/main.js"></script>
 </head>
 <body>
     <header>
         <noscript>
             <img src = "../images/No_js_err.png">
         </noscript>
-        <noscript>
-            <img src = "images/No_js_err.png">
-        </noscript>
+        
         <nav>
             
-            <div class = "link_container" id = "main_menu" onfocus="activate_menu('main_sub_menu')">
+            <div class = "link_container" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')">
                 <a href = "../index.html">Главная</a>
             </div>
-            <div class = "link_container" id = "about_menu" onfocus="deactivate_menu('main_sub_menu')">
+            <div class = "link_container" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')">
                 <a href = "about.html" > О нас</a>
             </div>
             <div class = "link_container">
@@ -30,6 +29,30 @@
             </div>
 
             <a id = "login">Авторизоваться</a>
+        </nav>
+        <div class = "banner" style = "background-image: url('../images/about_banner.png');">
+            
+        </div>
+        <div class = "banner_content">
+            <div class = "sub_menus">
+                <div id = "main_sub_menu" class = "sub_menu">
+                    <a> Экспедиции</a>
+                    <a> Галерея</a>
+                    <a> Оборудование</a>
+                </div>
+                <div id = "about_sub_menu" class = "sub_menu">
+                    <a> Основатели</a>
+                    <a> Кураторы</a>
+                    <a> Команда</a>
+                </div>
+            </div>
+
+            <div class = "Title">
+                <h2>Любишь смотреть на звезды? Присоединяйся к нам!</h2>
+                <h1>SKY</h1>
+                <h1>EXPEDITION</h1>
+            </div>
+        </div>
     </header>
 
     <main>

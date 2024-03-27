@@ -3,6 +3,10 @@
     src: url("fonts/Bahnschrift.ttf");
 }
 
+@font-face {
+    font-family: Porsche;
+    src: url("fonts/ofont.ru_Porsche.ttf");
+}
 *{
     font-family: 'Bahnschrift';
 }
@@ -74,4 +78,23 @@ a:visited{
 .sub_menu >*{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+h1{
+    font-family: Porsche;
+    font-size:80px;
+    color:white;
+    margin-left:10%;
+}
+h2{
+    color:white;
+    margin-left:10%;
+    font-size:40px;
+}
+
+.banner_content{
+    display: block;
+    position: absolute !important; 
+
+    left:0px;
+    top:5%;
 }
