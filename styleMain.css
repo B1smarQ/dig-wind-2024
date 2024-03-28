@@ -30,6 +30,10 @@ nav{
     mask-image: -webkit-gradient(linear, left top, left bottom, 
     from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
+
+
+
+
 .link_container{
 
     text-align: center;
@@ -39,7 +43,7 @@ nav{
     min-height: 62px;
 
     background-color: #000000;
-    margin-left: 5vw;
+    margin-left: 2vw;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 
@@ -49,20 +53,42 @@ nav{
     /* transition-duration: 0.5s; */
     /* transition-timing-function: linear; */
 }
+.link_container a{
+    color: #AEAEAE;
+}
+.link_container a:hover{
+    color: #ffffff;
+}
 
 .link_container:hover{
     background-color: #0C0F11;
 }
+.login {
+    display: flex;
+    justify-content: center;
+
+    min-width: 112px;
+    min-height: 62px;
+
+}
+.login a {
+    color: white;
+    line-height: 62px;
+
+    margin-left: 5px;
+}
+
+
 
 
 a{
+    font-size: 20px;
     min-width: 60px;
     text-decoration: none;
-    color:white;
 }
-a:visited{
+/* a:visited{
     color:white;
-}
+} */
 .sub_menus{
     display: flex;
     flex-direction: row;
