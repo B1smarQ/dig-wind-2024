@@ -15,9 +15,14 @@ body{
 }
 .pages_bar{
     display: flex;
-    
 }
-
+#preloader{
+    width:100vw;
+    height:100%;
+    background: black url("images/loading.gif") center center no-repeat;
+    position: fixed;
+    z-index: 100;
+}
 .banner{
     z-index: 1;
     background-image: url("images/main_background.png");
