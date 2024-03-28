@@ -1,13 +1,5 @@
-@font-face {
-    font-family: Bahnschrift;
-    src: url("fonts/Bahnschrift.ttf");
-}
-
-*{
-    font-family: 'Bahnschrift';
-}
 body{
-    background-color: #1E1E1E;
+    background-color: #000000;
 }
 nav{
     display: flex;
@@ -15,7 +7,7 @@ nav{
 }
 
 .banner{
-    background-image: url("images/about_back.png");
+    background-image: url("images/main_back.jpg");
     width:100%;
     min-height:676px;
     background-size:cover;
