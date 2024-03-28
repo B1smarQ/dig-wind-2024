@@ -17,21 +17,23 @@
             <img src = "images/No_js_err.png">
         </noscript>
         <nav class = "pages_bar">
-            
-            <div class = "link_container" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')" >
-                <a href = "index.html">Главная</a>
+            <div class id = "links">
+                <div class = "link_container" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')" >
+                    <a href = "index.html">Главная</a>
+                </div>
+                <div class = "link_container" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')" >
+                    <a href = "pages/about.html" > О нас</a>
+                </div>
+                <div class = "link_container">
+                    <a href = "pages/WIP.html">Отзывы</a>
+                </div>
+                <div class = "link_container">
+                    <a href = "pages/WIP.html">Контакты</a>
+                </div>
             </div>
-            <div class = "link_container" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')" >
-                <a href = "pages/about.html" > О нас</a>
+            <div id = "login">
+                <a >Авторизоваться</a>
             </div>
-            <div class = "link_container">
-                <a href = "pages/WIP.html">Отзывы</a>
-            </div>
-            <div class = "link_container">
-                <a href = "pages/WIP.html">Контакты</a>
-            </div>
-
-            <a id = "login">Авторизоваться</a>
         </nav>
         
         <div class = "banner" >
