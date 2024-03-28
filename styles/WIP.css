@@ -5,5 +5,22 @@ h1{
 a{
     text-align: center;
     font-size: 30px;
+    color:rgb(99, 56, 150);
     text-decoration: none;
+}
+h2{
+    text-align: center;
+    font-size:40px;
+}
+h3{
+    text-align: center;
+}
+video{
+    justify-self: center;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

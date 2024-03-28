@@ -8,12 +8,15 @@
     <script src = "../scripts/main.js"></script>
 </head>
 <body>
+    <div id = "preloader">
+
+    </div>
     <header>
         <noscript>
             <img src = "../images/No_js_err.png">
         </noscript>
         
-        <nav>
+        <nav class = "pages_bar">
             
             <div class = "link_container" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')">
                 <a href = "../index.html">Главная</a>
@@ -47,11 +50,24 @@
                 </div>
             </div>
 
-            <div class = "Title">
+            <div class = "Title" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
                 <h2>Любишь смотреть на звезды? Присоединяйся к нам!</h2>
                 <h1>SKY</h1>
                 <h1>EXPEDITION</h1>
             </div>
+        </div>
+        <div id = "bottom_sub_menu">
+            <nav class = "anchors">
+                <a href = "#creators">Основатели</a>
+                <a href = "#team">Команда</a>
+                <a href = "#gallery">Галерея</a>
+            </nav>
+            <nav id = "contacts">
+                <a href = "WIP.html"><img src = "../images/sms.svg"></a>
+                <a href = "WIP.html"><img src = "../images/phone.svg"></a>
+                <a href = "WIP.html"><img src = "../images/email.svg"></a>
+                
+            </nav>
         </div>
     </header>
 
@@ -62,6 +78,6 @@
     <footer>
 
     </footer>
-    
+    <script src = "../scripts/preloader.js"></script>
 </body>
 </html>
