@@ -1,4 +1,15 @@
+@font-face {
+    font-family: YanoneKaffeesatz;
+    src: url("fonts/YanoneKaffeesatz-Light.ttf");
+}
+
+*{
+    font-family: 'YanoneKaffeesatz';
+}
+
+
 body{
+    margin: 0px;
     background-color: #000000;
 }
 nav{
@@ -10,34 +21,40 @@ nav{
     background-image: url("images/main_back.jpg");
     width:100%;
     min-height:676px;
+
     background-size:cover;
     background-repeat: no-repeat;
+
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
     from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     mask-image: -webkit-gradient(linear, left top, left bottom, 
     from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 .link_container{
-    display: flex;
-    justify-items: center;
-    vertical-align: middle;
-    min-width: 120px;
-    min-height:50px;
-    background-color: #191F23;
+
+    text-align: center;
+    line-height: 62px;
+
+    min-width: 150px;
+    min-height: 62px;
+
+    background-color: #000000;
     margin-left: 5vw;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    font-size:25px;
-    align-items: center;
-    justify-content: center;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    font-size:20px;
+
+    /* transition-property: background-color; */
+    /* transition-duration: 0.5s; */
+    /* transition-timing-function: linear; */
 }
 
 .link_container:hover{
-    background-color: #AEAEAE;
+    background-color: #0C0F11;
 }
+
+
 a{
     min-width: 60px;
     text-decoration: none;
