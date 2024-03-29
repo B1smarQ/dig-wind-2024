@@ -17,21 +17,25 @@
         </noscript>
         
         <nav class = "pages_bar">
+            <div id = "links">
+                <div class = "link_container" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')">
+                    <a href = "../index.html">Главная</a>
+                </div>
+                <div class = "link_container" id = "about_menu current_page" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')" >
+                    <a href = "about.html" > О нас</a>
+                </div>
+                <div class = "link_container">
+                    <a href = "WIP.html">Отзывы</a>
+                </div>
+                <div class = "link_container">
+                    <a href = "WIP.html">Контакты</a>
+                </div>
+            </div>
+            <div id = "login">
+                <img src = "../icons/account.svg">
+                <a href = "WIP.html">Авторизоваться</a>
+            </div>
             
-            <div class = "link_container" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')">
-                <a href = "../index.html">Главная</a>
-            </div>
-            <div class = "link_container" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')">
-                <a href = "about.html" > О нас</a>
-            </div>
-            <div class = "link_container">
-                <a href = "WIP.html">Отзывы</a>
-            </div>
-            <div class = "link_container">
-                <a href = "WIP.html">Контакты</a>
-            </div>
-
-            <a id = "login">Авторизоваться</a>
         </nav>
         <div class = "banner" style = "background-image: url('../images/about_banner.png');">
             
@@ -72,7 +76,16 @@
     </header>
 
     <main>
-
+        <div id = "ad_banner">
+            <div>
+                <div id = "text_ad">
+                    <h3>Погрузитесь в удивительный мир нашей Вселенной</h3>
+                    <p>
+                        Благодаря нашей команде, вы будете будут иметь возможность погрузиться в увлекательный мир космоса и расширить свои познания в астрономии, пользуясь профессиональным оборудованием
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>

@@ -7,11 +7,17 @@
     font-family: Porsche;
     src: url("fonts/ofont.ru_Porsche.ttf");
 }
+
+@font-face {
+    font-family: Yanone;
+    src: url("fonts/YanoneKaffeesatz-Light.ttf");
+}
 *{
-    font-family: 'Bahnschrift';
+    font-family: 'Yanone';
 }
 body{
-    background-color: rgb(27, 27, 27);
+    margin:0px;
+    background-color: rgb(0, 0, 0);
 }
 .pages_bar{
     display: flex;
@@ -28,7 +34,8 @@ body{
     z-index: 1;
     background-image: url("images/main_background.png");
     width:100%;
-    min-height:676px;
+    min-height:500px;
+    height: 80%;
     background-size:cover;
     background-repeat: no-repeat;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
@@ -41,8 +48,8 @@ body{
     justify-items: center;
     vertical-align: middle;
     min-width: 120px;
-    min-height:50px;
-    background-color: #191F23;
+    min-height:62px;
+    background-color: black;
     margin-left: 5vw;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -52,6 +59,9 @@ body{
     transition-property: background-color;
     transition-duration: 0.5s;
     transition-timing-function: linear;
+}
+#current_page{
+    background-color: #191F23 !important;
 }
 #login{
     justify-self: right;
@@ -100,11 +110,16 @@ h1{
     font-size:80px;
     color:white;
     margin-left:10%;
+    
+    margin-block-end: 0%;
+    margin-block-start: 0%;
 }
 h2{
     color:white;
     margin-left:10%;
     font-size:40px;
+    margin-bottom: 5%;
+    margin-top: 15%;
 }
 
 .banner_content{
@@ -161,4 +176,43 @@ h2{
 
 .anchors a:hover{
     background-color: #262F36;
+}
+
+main{
+    margin-top:10%;
+}
+
+h3{
+    color:white;
+    font-size: 40px;
+}
+p{
+    color:white;
+    font-size:20px;
+}
+
+
+#ad_banner{
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+
+#ad_banner div{
+    width:30%;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/moon.png");
+}
+#text_ad{
+    
+    z-index:1;
+    top:0px;
+    left:0px;
+}
+
+#ad_banner img{
+    width:50%;
+    height:100%;
 }

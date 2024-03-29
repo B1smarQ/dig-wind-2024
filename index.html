@@ -14,11 +14,16 @@
 
     <header>
         <noscript>
+            <style>
+                #preloader{
+                    display: none;
+                }
+            </style>
             <img src = "images/No_js_err.png">
         </noscript>
         <nav class = "pages_bar">
             <div class id = "links">
-                <div class = "link_container" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')" >
+                <div class = "link_container" id = "main_menu current_page" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')" >
                     <a href = "index.html">Главная</a>
                 </div>
                 <div class = "link_container" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')" >
@@ -32,7 +37,8 @@
                 </div>
             </div>
             <div id = "login">
-                <a >Авторизоваться</a>
+                <img src = "icons/account.svg">
+                <a href = "pages/WIP.html">Авторизоваться</a>
             </div>
         </nav>
         
