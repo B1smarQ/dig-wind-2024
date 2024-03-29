@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href = "../style.css">
-    <script src = "../scripts/main.js"></script>
+    <link rel = "stylesheet" href="../styles/about.css">
+    
 </head>
 <body>
     <div id = "preloader">
-
+        
     </div>
     <header>
         <noscript>
+            <style>
+                #preloader{
+                    display: none;
+                }
+            </style>
             <img src = "../images/No_js_err.png">
         </noscript>
         
@@ -37,7 +43,7 @@
             </div>
             
         </nav>
-        <div class = "banner" style = "background-image: url('../images/about_banner.png');">
+        <div class = "banner" style = "background-image: url('../images/about_banner.png');" id = "top">
             
         </div>
         <div class = "banner_content">
@@ -76,21 +82,60 @@
     </header>
 
     <main>
-        <div id = "ad_banner">
-            <div>
-                <div id = "text_ad">
-                    <h3>Погрузитесь в удивительный мир нашей Вселенной</h3>
-                    <p>
-                        Благодаря нашей команде, вы будете будут иметь возможность погрузиться в увлекательный мир космоса и расширить свои познания в астрономии, пользуясь профессиональным оборудованием
-                    </p>
+        <div id = "ad">
+            <div id = "ad_banner">
+                <div id = "about_ad_container">
+                    <div id = "text_ad">
+                        <h3 style = "margin-top:-20px;" >Погрузитесь в удивительный мир нашей Вселенной</h3>
+                        <p>
+                            Благодаря нашей команде, вы будете будут иметь возможность погрузиться в увлекательный мир космоса и расширить свои познания в астрономии, пользуясь профессиональным оборудованием
+                        </p>
+                    </div>
+                    <button id = "join_button"> Присоединиться </button>
                 </div>
             </div>
         </div>
+        <div class = "sub_title_container">
+            <div class = "sub_title">
+                <div id = "creators">
+                    <h3 >Основатели</h3>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+        <div class = "photos_container">
+            <div class = "photo">
+                
+                <img src = "../images/zvezdyuk.png">
+                <h3>Иван Пиздюк</h3>
+                <p>Я ебанутый</p>
+                <div class = "photos_socials">
+                    <a href = "WIP.html"><img src = "../images/sms.svg" ></a>
+                    <a href = "WIP.html"><img src = "../images/phone.svg" ></a>
+                    <a href = "WIP.html"><img src = "../images/email.svg" "></a>
+                </div>
+            </div>
+            <div class = "photo">
+                
+                <img src = "../images/tumka.png">
+                <h3>Татьяна Хуйнюнесенко</h3>
+                <p>Известный психолог, нумеролог, таролог, мамолог, гинеколог, археолог, геолог, отолоринголог, проктолог</p>
+                <div class = "photos_socials">
+                    <a href = "WIP.html" ><img src = "../images/sms.svg" ></a>
+                    <a href = "WIP.html"><img src = "../images/phone.svg" ></a>
+                    <a href = "WIP.html"><img src = "../images/email.svg" ></a>
+                </div>
+            </div>
+        </div>
+        <button onclick = "topFunction()" id = "up_button"><img src = "../icons/up_arrow.svg" ></button>
     </main>
 
     <footer>
 
     </footer>
+    <script src = "../scripts/main.js"></script>
     <script src = "../scripts/preloader.js"></script>
 </body>
 </html>

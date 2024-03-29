@@ -126,7 +126,7 @@ h2{
     display: block;
     position: absolute !important; 
 
-    left:0px;
+    left:5%;
     top:7%;
 }
 #bottom_sub_menu{
@@ -192,27 +192,3 @@ p{
 }
 
 
-#ad_banner{
-    display: flex;
-    width:100%;
-    justify-content: center;
-}
-
-#ad_banner div{
-    width:30%;
-    justify-self: center;
-    display: flex;
-    flex-direction: row;
-    background-image: url("images/moon.png");
-}
-#text_ad{
-    
-    z-index:1;
-    top:0px;
-    left:0px;
-}
-
-#ad_banner img{
-    width:50%;
-    height:100%;
-}
