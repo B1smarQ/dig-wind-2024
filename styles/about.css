@@ -147,6 +147,12 @@ h3{
     margin-left:10px;
     margin-top:20px;
     margin-bottom: 20px;
+    transition:0.5s linear;
+}
+
+.photos_socials svg:hover{
+    height:50px;
+    width:50px;
 }
 .media_link:hover path{
     fill:#7C4D2D;
