@@ -64,6 +64,7 @@ body{
     background-color: #191F23 !important;
 }
 #login{
+    margin-right: 10%;
     justify-self: right;
     align-self:flex-end;
     align-self:center;
