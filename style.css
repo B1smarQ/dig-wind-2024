@@ -34,7 +34,7 @@ body{
     z-index: 1;
     background-image: url("images/main_background.png");
     width:100%;
-    min-height:500px;
+    min-height:700px;
     height: 80%;
     background-size:cover;
     background-repeat: no-repeat;
