@@ -12,6 +12,22 @@
     <div id = "preloader">
         
     </div>
+    <form>
+        <div id = "login_window">
+            <div id = "login_box">
+                <h3>Войти в аккаунт</h3>
+                <div id = "login_form">
+                    <input type = "email" placeholder = "example@example.com" id = "login_input" required>
+                    <input type = "password" placeholder = "PASSWORD" id = "password_input" required minlength="5">
+                    <div id = "button_container">
+                        <button type = "submit"  id = "login_button" > Войти </button>
+                        <button type = "submit"  id = "sign_up_button" > Регистрация </button>
+                    </div>
+                    <button id ="login_cancel" onclick = "document.getElementById('login_window').style.display = 'none'; console.log('disabling login')" type = "reset">Отминет</button>
+                </div>
+            </div>
+        </div>
+    </form>
     <header>
         <noscript>
             <style>
@@ -39,7 +55,7 @@
             </div>
             <div id = "login">
                 <img src = "../icons/account.svg">
-                <a href = "WIP.html">Авторизоваться</a>
+                <a onclick = "document.getElementById('login_window').style.display = 'flex'" href = "#">Авторизоваться</a>
             </div>
             
         </nav>
