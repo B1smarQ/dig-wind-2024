@@ -71,7 +71,7 @@ body{
     /* transition-duration: 0.5s; */
     transition-timing-function: linear;
 }
-#current_page{
+.current_page{
     background-color: #191F23 !important;
 }
 
