@@ -40,9 +40,19 @@
             <div class id = "links">
                 <div class = "link_container" style="background-color: #191F23;" id = "main_menu current_page" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')" >
                     <a href = "index.html">Главная</a>
+                    <div id = "main_sub_menu" class = "sub_menu">
+                        <a href = "#expeditions"> Экспедиции</a>
+                        <a href = "#equipment"> Оборудование</a>
+                        <a href = "#curators"> Кураторы</a>
+                    </div>
                 </div>
                 <div class = "link_container" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')" >
                     <a href = "pages/about.html" > О нас</a>
+                    <div id = "about_sub_menu" class = "sub_menu">
+                        <a href = "pages/about.html#creators"> Основатели</a>
+                        <a href = "pages/about.html#team"> Команда</a>
+                        <a href = "pages/about.html#gallety"> Галерея</a>
+                    </div>
                 </div>
                 <div class = "link_container">
                     <a href = "pages/WIP.html">Отзывы</a>
@@ -62,16 +72,8 @@
         </div>
         <div class = "banner_content">
             <div class = "sub_menus">
-                <div id = "main_sub_menu" class = "sub_menu">
-                    <a href = "#expeditions"> Экспедиции</a>
-                    <a href = "#equipment"> Оборудование</a>
-                    <a href = "#curators"> Кураторы</a>
-                </div>
-                <div id = "about_sub_menu" class = "sub_menu">
-                    <a href = "pages/about.html#creators"> Основатели</a>
-                    <a href = "pages/about.html#team"> Команда</a>
-                    <a href = "pages/about.html#gallety"> Галерея</a>
-                </div>
+                
+                
             </div>
 
             <div class = "Title" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
