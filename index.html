@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sky Expedition</title>
     <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "styles/main.css">
     
 </head>
 <body>
@@ -61,25 +62,17 @@
                     <a href = "pages/WIP.html">Контакты</a>
                 </div>
             </div>
-            <div id = "login">
+            <div class = "link_container" style="margin: 0;">
                 <img src = "icons/account.svg">
                 <a onclick = "document.getElementById('login_window').style.display = 'flex'" href = "#">Авторизоваться</a>
             </div>
         </nav>
         
-        <div class = "banner" id = "top">
-            
-        </div>
+        <div class = "banner" id = "top"></div>
         <div class = "banner_content">
-            <div class = "sub_menus">
-                
-                
-            </div>
-
             <div class = "Title" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
-                <h2>Любишь смотреть на звезды? Присоединяйся к нам!</h2>
-                <h1>SKY</h1>
-                <h1>EXPEDITION</h1>
+                <div class="upH">Любишь смотреть на звезды? Присоединяйся к нам!</div>
+                <div class="HH">SKY EXPEDITION</div>
             </div>
         </div>
         <div id = "bottom_sub_menu">
@@ -98,7 +91,21 @@
     </header>
 
     <main>
-
+        <section class="hello">
+            <div class="enjoyBlock">
+                <div class="Hh">Насладитесь гармонией космоса вместе с нами</div>
+                <p class="text">Мы предоставляем возможность участвовать
+                    в ночных наблюдениях под руководством 
+                    опытных астрономов, c использованием 
+                    профессионального
+                    оборудования </p>
+                <p class="text">
+                    Путешествие с нами станет незабываемым 
+                    опытом для всех, кто увлечен космосом и хочет
+                    погрузиться в его мир</p>
+                <button class="ButtontoTours">Присоединиться</button>
+            </div>
+        </section>
     </main>
 
     <footer>

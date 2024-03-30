@@ -14,6 +14,7 @@
 }
 *{
     font-family: 'Yanone';
+    font-size: 20px;
 }
 body{
     margin:0px;
@@ -29,6 +30,7 @@ body{
     width: 90%;
 
     justify-content: space-between;
+    align-items: center;
 }
 #preloader{
     width:100vw;
@@ -42,9 +44,10 @@ body{
     background-image: url("images/main_background.png");
     width:100%;
     min-height: 550px;
-    /* height: 70%; */
+
     background-size:cover;
     background-repeat: no-repeat;
+
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
     from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     mask-image: -webkit-gradient(linear, left top, left bottom, 
@@ -55,7 +58,7 @@ body{
     line-height: 62px;
 
     min-width: 150px;
-    min-height: 62px;
+    height: 62px;
 
     background-color: black;
 
@@ -71,12 +74,11 @@ body{
 #current_page{
     background-color: #191F23 !important;
 }
-#login{
-    justify-self: right;
-    align-self:flex-end;
-    align-self:center;
-    justify-content: right;
-}
+
+
+
+
+
 #links{
     display: flex;
     justify-content: space-between;
@@ -119,34 +121,40 @@ a:visited{
     font-size:20px;
 
     box-sizing: border-box;
+
+    overflow: hidden;
 }
 .sub_menu >*{
     margin-top: 1%;
     margin-bottom: 1%;
 }
-h1{
-    font-family: Porsche;
-    font-size:80px;
-    color:white;
-    margin-left:10%;
-    
-    margin-block-end: 0%;
-    margin-block-start: 0%;
-}
-h2{
-    color:white;
-    margin-left:10%;
-    font-size:40px;
-    margin-bottom: 5%;
-    margin-top: 15%;
+.sub_menu a:hover{
+    color: #e2d5c9;
 }
 
+
+.upH {
+    color:white;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 15%;
+}
+.HH {
+    font-family: Porsche;
+    font-size: 90px;
+    color:white;
+    margin-bottom: 15%;
+}
 .banner_content{
     display: block;
     position: absolute !important; 
 
-    left:5%;
-    top:7%;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    bottom: 70%;
+
+    top: 62px;
 }
 #bottom_sub_menu{
     background-color: #191F23;
@@ -207,7 +215,7 @@ h2{
 }
 
 main{
-    margin-top:10%;
+    margin-top: 50px;
 }
 
 h3{
@@ -324,4 +332,9 @@ p{
     display: flex;
     width:50%;
     justify-content: space-between;
+}
+
+button {
+    border-radius: 0;
+    border: 0;
 }
