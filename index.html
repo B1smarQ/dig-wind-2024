@@ -3,49 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href = "styleMain.css">
+    <title>Sky Expedition</title>
+    <link rel = "stylesheet" href = "style.css">
     <script src = "scripts/main.js"></script>
 </head>
 <body>
+    <div id = "preloader">
+
+    </div>
+
     <header>
         <noscript>
             <img src = "images/No_js_err.png">
         </noscript>
-        <nav>
-            
-            <div class = "link_container" >
-                <a href = "index.html">Главная</a>
+        <nav class = "pages_bar">
+            <div class id = "links">
+                <div class = "link_container" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')" >
+                    <a href = "index.html">Главная</a>
+                </div>
+                <div class = "link_container" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')" >
+                    <a href = "pages/about.html" > О нас</a>
+                </div>
+                <div class = "link_container">
+                    <a href = "pages/WIP.html">Отзывы</a>
+                </div>
+                <div class = "link_container">
+                    <a href = "pages/WIP.html">Контакты</a>
+                </div>
             </div>
-            <div class = "link_container" >
-                <a href = "pages/about.html" > О нас</a>
-            </div>
-            <div class = "link_container">
-                <a href = "pages/reviews.html">Отзывы</a>
-            </div>
-            <div class = "link_container">
-                <a href = "pages/contacts.html">Контакты</a>
-            </div>
-            
+
             <div class = "login">
                 <img src="icons/account.svg" alt="">
-                <a>Авторизоваться</a>
+                <a id = "login">Авторизоваться</a>
             </div>
         </nav>
         
-        <div class = "banner">
+        <div class = "banner" >
+            
+        </div>
+        <div class = "banner_content">
             <div class = "sub_menus">
                 <div id = "main_sub_menu" class = "sub_menu">
-                    <a> Экспедиции</a>
-                    <a> Оборудование</a>
-                    <a> Кураторы</a>
+                    <a href = "#expeditions"> Экспедиции</a>
+                    <a href = "#equipment"> Оборудование</a>
+                    <a href = "#galery"> Галерея</a>
                 </div>
                 <div id = "about_sub_menu" class = "sub_menu">
-                    <a> Основатели</a>
-                    <a> Команда</a>
-                    <a> Галерея</a>
+                    <a href = "pages/about.html#creators"> Основатели</a>
+                    <a href = "pages/about.html#curators"> Кураторы</a>
+                    <a href = "pages/about.html#team"> Команда</a>
                 </div>
             </div>
+
+            <div class = "Title" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
+                <h2>Любишь смотреть на звезды? Присоединяйся к нам!</h2>
+                <h1>SKY</h1>
+                <h1>EXPEDITION</h1>
+            </div>
+        </div>
+        <div id = "bottom_sub_menu">
+            <nav class = "anchors">
+                <a href = "#expeditions">Экспедиции</a>
+                <a href = "#equipment">Оборудование</a>
+                <a href = "#gallery">Галерея</a>
+            </nav>
+            <nav id = "contacts">
+                <a href = "pages/WIP.html"><img src = "images/sms.svg" href = "pages/WIP.html"></a>
+                <a href = "pages/WIP.html"><img src = "images/phone.svg"href = "pages/WIP.html"></a>
+                <a href = "pages/WIP.html"><img src = "images/email.svg"></a>
+                
+            </nav>
         </div>
     </header>
 
@@ -56,6 +83,6 @@
     <footer>
 
     </footer>
-    
+    <script src = "scripts/preloader.js"></script>
 </body>
 </html>

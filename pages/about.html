@@ -5,31 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href = "../style.css">
+    <script src = "../scripts/main.js"></script>
 </head>
 <body>
+    <div id = "preloader">
+
+    </div>
     <header>
         <noscript>
             <img src = "../images/No_js_err.png">
         </noscript>
-        <noscript>
-            <img src = "images/No_js_err.png">
-        </noscript>
-        <nav>
+        
+        <nav class = "pages_bar">
             
-            <div class = "link_container" id = "main_menu" onfocus="activate_menu('main_sub_menu')">
+            <div class = "link_container" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')">
                 <a href = "../index.html">Главная</a>
             </div>
-            <div class = "link_container" id = "about_menu" onfocus="deactivate_menu('main_sub_menu')">
+            <div class = "link_container" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')">
                 <a href = "about.html" > О нас</a>
             </div>
             <div class = "link_container">
-                <a href = "reviews.html">Отзывы</a>
+                <a href = "WIP.html">Отзывы</a>
             </div>
             <div class = "link_container">
-                <a href = "contacts.html">Контакты</a>
+                <a href = "WIP.html">Контакты</a>
             </div>
 
             <a id = "login">Авторизоваться</a>
+        </nav>
+        <div class = "banner" style = "background-image: url('../images/about_banner.png');">
+            
+        </div>
+        <div class = "banner_content">
+            <div class = "sub_menus">
+                <div id = "main_sub_menu" class = "sub_menu">
+                    <a href = "../index.html#expeditions"> Экспедиции</a>
+                    <a href = "../index.html#equipment"> Оборудование</a>
+                    <a href = "../index.html#galery"> Галерея</a>
+                </div>
+                <div id = "about_sub_menu" class = "sub_menu">
+                    <a href = "#creators"> Основатели</a>
+                    <a href = "#curators"> Кураторы</a>
+                    <a href = "#team"> Команда</a>
+                </div>
+            </div>
+
+            <div class = "Title" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
+                <h2>Любишь смотреть на звезды? Присоединяйся к нам!</h2>
+                <h1>SKY</h1>
+                <h1>EXPEDITION</h1>
+            </div>
+        </div>
+        <div id = "bottom_sub_menu">
+            <nav class = "anchors">
+                <a href = "#creators">Основатели</a>
+                <a href = "#curators">Кураторы</a>
+                <a href = "#team">Команда</a>
+            </nav>
+            <nav id = "contacts">
+                <a href = "WIP.html"><img src = "../images/sms.svg"></a>
+                <a href = "WIP.html"><img src = "../images/phone.svg"></a>
+                <a href = "WIP.html"><img src = "../images/email.svg"></a>
+                
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -39,6 +78,6 @@
     <footer>
 
     </footer>
-    
+    <script src = "../scripts/preloader.js"></script>
 </body>
 </html>
