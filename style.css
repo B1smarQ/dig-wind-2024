@@ -122,6 +122,8 @@ a:visited{
 
     box-sizing: border-box;
 
+    box-shadow: #191F23 5px 5px 7px;
+
     overflow: hidden;
 }
 .sub_menu >*{
