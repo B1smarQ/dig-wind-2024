@@ -40,7 +40,7 @@
         
         <nav class = "pages_bar">
             <div class id = "links">
-                <div class = "link_container" style="background-color: #191F23;" id = "main_menu current_page" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')" >
+                <div class = "link_container"  id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')" >
                     <a href = "../index.html">Главная</a>
                     <div id = "main_sub_menu" class = "sub_menu">
                         <a href = "#expeditions"> Экспедиции</a>
@@ -48,7 +48,7 @@
                         <a href = "#curators"> Кураторы</a>
                     </div>
                 </div>
-                <div class = "link_container" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')" >
+                <div class = "link_container current_page" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')" >
                     <a href = "about.html" > О нас</a>
                     <div id = "about_sub_menu" class = "sub_menu">
                         <a href = "about.html#creators"> Основатели</a>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div id = "login">
-                <img src = "icons/account.svg">
+                <img src = "../icons/account.svg">
                 <a onclick = "document.getElementById('login_window').style.display = 'flex'" href = "#">Авторизоваться</a>
             </div>
         </nav>
