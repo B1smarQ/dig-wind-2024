@@ -81,12 +81,15 @@ section {
 
 
 
+
+/* SECTION 2 */
+
 .container {
+
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 50px 300px;
     gap: 20px;
-    justify-content: center;
 
     max-height: 350px;
     width: 80%;
@@ -98,9 +101,6 @@ section {
 
 }
 .InfoBlock {
-
-    /* position: relative; */
-    /* flex-grow: 3; */
 
     grid-column-start: 1;
     grid-column-end: 1;
@@ -125,7 +125,7 @@ section {
 
 
 .rightBlock {
-    /* flex-grow: 1; */
+
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -190,24 +190,18 @@ section {
 .buttonMore:hover {
     background-color: #C56E34;
 }
-/* .rightBlock .buttonMore:focus + .InfoBlock {
-    max-height: 1000px;
-} */
 
 .buttonMore:focus {
     background-color: #C56E34;
 }
 
-
 .container:has(.buttonMore:focus) {
     margin-bottom: 300px;
 }
 
-
 .buttonMore:focus + .InfoBlock {
     height: 600px;
 }
-
 
 .price {
     border: solid 1px white;
@@ -221,4 +215,17 @@ section {
     margin: 20px;
 
     line-height: 54px;
+}
+
+.tourTitle {
+
+    font-size: 40px;
+    color: white;
+    
+    text-align: left;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
