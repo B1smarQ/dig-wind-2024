@@ -38,12 +38,12 @@ h3{
     text-align: center;
     width:100%;
     font-size: 40px !important;
-    font-family: Bahnschrift !important; 
+    
 }
 #text_ad p{
     text-align:left;
     width:80%;
-    font-family: Bahnschrift !important; 
+     
     font-size: 20px !important;
     margin-bottom:50px;
 }
@@ -55,7 +55,7 @@ h3{
     width:40%;
     border-radius: 30px;
     margin-top:-50px;
-    font-family: Bahnschrift;;
+    
 }
 #ad{
     width:100%;
