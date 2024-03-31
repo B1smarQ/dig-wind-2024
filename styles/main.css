@@ -5,14 +5,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0%;
-
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    
     height: 620px;
 }
 section {
     margin-bottom: 30px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
@@ -92,9 +92,6 @@ section {
     gap: 20px;
 
     max-height: 350px;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
 
     transition-property: margin-bottom;
     transition-duration: 2s;
