@@ -102,6 +102,10 @@ h3{
     bottom:25px;
     
 }
+
+#up_button path{
+    fill:#FFF;
+}
 .sub_title_name{
     width:30%;
     background-color: #191F23;
