@@ -29,11 +29,13 @@ html{
 .hidden{
     opacity:0 ;
     filter:blur(1px);
+    transform:translateY(50px);
     -ms-filter: blur(1px);
     transition: 1s linear !important;
 }
 
 .show{
+    transform:translateY(0px);
     opacity: 1 !important;
     filter:blur(0px);
     -ms-filter: blur(0px);
