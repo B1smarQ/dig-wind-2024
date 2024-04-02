@@ -4,6 +4,7 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden ;
 }
 #ad{
     min-height:50vh;
@@ -18,7 +19,10 @@ html{
     background-image: url("../images/about_banner_ad.png");
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: -1;
+    overflow: hidden;
 }
+
 
 #about_ad_container{
     width: 30%;
@@ -164,9 +168,6 @@ h3{
     transition:0.5s linear;
 }
 
-.photos_socials svg:hover{
-    
-}
 .media_link:hover path{
     fill:#7C4D2D;
 }
