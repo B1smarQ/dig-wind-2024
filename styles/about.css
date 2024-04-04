@@ -2,18 +2,27 @@
     font-family: Bahnschrift;
     src: url("../fonts/Bahnschrift.ttf");
 }
-
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden ;
+}
+#ad{
+    min-height:50vh;
+}
 #ad_banner{
     display: flex;
     width:80%;
     
-    min-height: 800px;
+    height:100%;
     justify-content: center;
     
     background-image: url("../images/about_banner_ad.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    z-index: -1;
+    overflow: hidden;
 }
+
 
 #about_ad_container{
     width: 30%;
@@ -57,9 +66,13 @@ h3{
     margin-top:-50px;
     
 }
+
+#join_button:hover{
+    background-color: #C56E34;
+}
 #ad{
     width:100%;
-    height:100%;
+    height:100vh;
     min-height:800px;
     display: flex;
     justify-content: center;
@@ -92,6 +105,10 @@ h3{
     right:50px;
     bottom:25px;
     
+}
+
+#up_button path{
+    fill:#FFF;
 }
 .sub_title_name{
     width:30%;
@@ -138,21 +155,19 @@ h3{
     justify-content: space-between;
     justify-items: center;
     align-items: center;
+    margin-bottom:20px;
 }
 .photos_socials svg{
     border-radius:0px !important;
-    height:30px;
-    width:30px;
-    margin-left:10px;
+    height:20px;
+    width: 20px;
+    margin-left:5px;
+    margin-right:5px;
     margin-top:20px;
     margin-bottom: 20px;
     transition:0.5s linear;
 }
 
-.photos_socials svg:hover{
-    height:50px;
-    width:50px;
-}
 .media_link:hover path{
     fill:#7C4D2D;
 }
@@ -194,10 +209,11 @@ h3{
     margin-left: 10%;
     margin-right: 10%;
     margin-top:30%;
-    row-gap: 200px;
+    row-gap: 20vh;
+    margin-bottom:20vh;
 }
 .tour_photo{
-    height:600px;
+    height:75vh;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px;

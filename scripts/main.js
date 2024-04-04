@@ -22,6 +22,24 @@ function scrollFunction() {
 }
 
 function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+    else{
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hidden_elements = document.querySelectorAll('.hidden');
+
+hidden_elements.forEach(element => {
+  observer.observe(element);
+});
