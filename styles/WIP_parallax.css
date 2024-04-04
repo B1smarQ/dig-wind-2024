@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Yanone';
+    src: url('../fonts/YanoneKaffeesatz-Light.ttf');
+}
+@font-face {
+    font-family: 'Porsche';
+    src: url('../fonts/ofont.ru_Porsche.ttf');
+}
+#preloader{
+    width:100vw;
+    height:100%;
+    background: black url("../images/loading.gif") center center no-repeat;
+    background-size: 100px;
+    position: fixed;
+    z-index: 2000;
+}
+#logo{
+    font-size:2em;
+    font-family: 'Porsche';
+    text-decoration: none;
+    color:white
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Yanone';
+}
+body{
+    min-height:100vh;
+    background:linear-gradient(#2b1055,#7597de);
+    overflow-x:hidden;
+}
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left:20px;
+    font-size: 2em;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color:#fff;
+}
+
+section {
+    position:relative;
+    width:100%;
+    height:100vh;
+    padding:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+ section img#moon{
+    mix-blend-mode: screen;
+}
+ section img#mountains_front{
+    z-index:10;
+}
+
+h2{
+    position:absolute;
+    font-size:3.5em;
+    color:white;
+    white-space: nowrap;
+    z-index:9;
+   
+}
+section::before{
+    content:'';
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100px;
+    background: linear-gradient( transparent,black);
+    z-index:1000;
+}
+#sec{
+    background-color: black;
+    z-index:1001;
+    position:relative;
+    padding:100px;
+    min-height:100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#sec h3{
+    margin-top:100px;
+    color: white;
+    font-size: 3em;
+
+}
+
+#sec a{
+    
+    color:white;
+    font-size:2em;
+    margin-top:100px;
+}
+#sec h4{
+    margin-top:200px;
+}
+
