@@ -8,7 +8,7 @@ window.addEventListener('scroll', function(){
     let value = window.scrollY;
     if(value<max_parallax_length){
         stars.style.left = value  + 'px';
-        moon.style.top = value*1.05 + 'px';
+        moon.style.top = value + 'px';
         mountains_back.style.top = value*0.5 + 'px';
         text.style.marginRight = value*0.5 + 'px';
         mountains_front.style.top = value*0.25 + 'px';
