@@ -6,6 +6,19 @@
     font-family: 'Porsche';
     src: url('../fonts/ofont.ru_Porsche.ttf');
 }
+::-webkit-scrollbar-track {
+    background: #252424;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 5px;
+  }
+
 #preloader{
     width:100vw;
     height:100%;
