@@ -238,13 +238,14 @@ h4{
     font-size: 40px;
 }
 .photo_link{
+    margin-top:50px;
     width: 50%;
     font-size:20px;
     border:solid white 2px;
     border-radius: 30px;
     border-spacing: 10px;
     padding: 10px;
-    transition:0.25s linear;
+    transition:0.25s linear !important;
     text-align: center;
 }
 .photo_link:hover{

@@ -54,10 +54,16 @@ header ul li{
     font-size: 2em;
 }
 
+
 header ul li a{
     text-decoration: none;
     padding: 6px 15px;
     color:#fff;
+}
+
+header ul li a:hover{
+    background-color: rgba(215, 175, 223, 0.3);
+    border-radius: 30px;
 }
 
 section {
@@ -90,6 +96,7 @@ h2{
     color:white;
     white-space: nowrap;
     z-index:9;
+    transform:translateX(100px);
    
 }
 section::before{
@@ -129,3 +136,6 @@ section::before{
     margin-top:200px;
 }
 
+#sec video{
+    border-radius: 30px;
+}

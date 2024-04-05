@@ -10,7 +10,7 @@ window.addEventListener('scroll', function(){
         stars.style.left = value  + 'px';
         moon.style.top = value + 'px';
         mountains_back.style.top = value*0.5 + 'px';
-        text.style.marginRight = value*0.5 + 'px';
+        text.style.marginRight = value + 'px';
         mountains_front.style.top = value*0.25 + 'px';
     }
 },
