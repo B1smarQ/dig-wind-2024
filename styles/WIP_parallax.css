@@ -28,7 +28,7 @@
     z-index: 2000;
 }
 #logo{
-    font-size:2em;
+    font-size:clamp(1em,2em,4em);
     font-family: 'Porsche';
     text-decoration: none;
     color:white
@@ -40,7 +40,7 @@
     font-family: 'Yanone';
 }
 body{
-    min-height:100vh;
+    min-height:100dvh;
     background:linear-gradient(#2b1055,#7597de);
     overflow-x:hidden;
 }
@@ -81,7 +81,7 @@ header ul li a:hover{
 
 section {
     position:relative;
-    width:100%;
+    width:100dvw;
     height:100vh;
     padding:100px;
     display: flex;
@@ -105,7 +105,7 @@ section img{
 
 h2{
     position:absolute;
-    font-size:3.5em;
+    font-size:clamp(2em,3.5em,5em);
     color:white;
     white-space: nowrap;
     z-index:9;
@@ -127,6 +127,7 @@ section::before{
     position:relative;
     padding:100px;
     min-height:100dvh;
+    width:100dvw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,5 +151,19 @@ section::before{
 }
 
 #sec video{
+    object-fit: center;
     border-radius: 30px;
+}
+
+@media  screen and (max-width: 900px){
+    header{
+        flex-direction: column;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    header ul li{
+        -webkit-text-stroke-width:1px ;
+        -webkit-text-stroke-color: black;
+    }
 }

@@ -11,9 +11,9 @@ html{
 }
 #ad_banner{
     display: flex;
-    width:80%;
+    width:80dvw;
     
-    height:100%;
+    height:100dvh;
     justify-content: center;
     
     background-image: url("../images/about_banner_ad.png");
@@ -71,8 +71,8 @@ h3{
     background-color: #C56E34;
 }
 #ad{
-    width:100%;
-    height:100vh;
+    width:100dvw;
+    height:100dvh;
     min-height:800px;
     display: flex;
     justify-content: center;
@@ -82,7 +82,7 @@ h3{
 
 .sub_title{
     display: flex;
-    width:80%;
+    width:80dvw;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -92,9 +92,9 @@ h3{
     
 }
 .sub_title_container{
-    margin-top:200px;
+    margin-top:20dvh;
     display: flex;
-    width:100%;
+    width:100dvw;
     justify-items: center;
     justify-content: center;
 }
@@ -123,10 +123,20 @@ h3{
     margin-left:10%;
     margin-top: 100px;
     margin-right:10%;
-    width:80%;
+    width:80dvw;
     display: grid;
     gap:10%;
     grid-template-columns: 1fr 1fr;
+
+}
+.photos_container_team{
+    margin-left:10%;
+    margin-top: 100px;
+    margin-right:10%;
+    width:80dvw;
+    display: grid;
+    gap:5%;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 .photo{
@@ -254,4 +264,10 @@ h4{
 .photo_link:hover{
     border-color:#7C4D2D;
     background-color: #7C4D2D;
+}
+
+@media  screen and (max-width:900px){
+    .photos_container_team{
+        grid-template-columns: 1fr 1fr;
+    }
 }

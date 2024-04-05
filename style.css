@@ -63,16 +63,16 @@ body{
 
     font-size: 20px;
 
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
+    margin-left: 5dvw;
+    margin-right: 5dvw;
+    width: 90dvw;
 
     justify-content: space-between;
     align-items: center;
 }
 #preloader{
-    width:100vw;
-    height:100%;
+    width:100dvw;
+    height:100dvh;
     background: black url("images/loading.gif") center center no-repeat;
     background-size: 100px;
     position: fixed;
@@ -81,7 +81,7 @@ body{
 .banner{
     z-index: 1;
     background-image: url("images/main_background.png");
-    width:100%;
+    width:100dvw;
     min-height: 550px;
 
     background-size:cover;
@@ -96,12 +96,12 @@ body{
     text-align: center;
     line-height: 62px;
 
-    min-width: 150px;
+    min-width: clamp(20px,150px,150px);
     height: 62px;
 
     background-color: black;
 
-    margin-right: 5%;
+    margin-right: 5dvw;
 
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -114,7 +114,12 @@ body{
     background-color: #191F23 !important;
 }
 
-
+@media screen and (max-width:900px) {
+    #links{
+        flex-direction: column;
+        margin-bottom:100px;
+    }
+}
 
 
 
