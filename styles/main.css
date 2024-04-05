@@ -133,9 +133,13 @@ section {
     margin-top: 30px;
     text-align: left;
 }
+div#titltP{
+    align-self:center;
+}
 .image {
     border-radius: 30px;
     height: 300px;
+    width: 100%;
 
     object-fit: cover;
     /* background-size:cover; */
