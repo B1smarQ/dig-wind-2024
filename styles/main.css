@@ -107,7 +107,7 @@ section {
     
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 300px 150px;
+    grid-template-rows: 300px 200px 150px;
 
     
 
@@ -177,6 +177,7 @@ div#titltP{
     /* width: 80%; */
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 20px;
 }
 .buttonBook:hover {
     background-color: #C56E34;
@@ -259,7 +260,7 @@ div#titltP{
 }
 
 .buttonMore:focus + .InfoBlock {
-    height: 750px;
+    height: 700px;
 }
 
 .price {
