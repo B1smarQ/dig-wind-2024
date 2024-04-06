@@ -154,7 +154,10 @@ section::before{
     object-fit: center;
     border-radius: 30px;
 }
-
+#licence{
+    font-size:1em !important;
+    color:grey !important; 
+}
 @media  screen and (max-width: 900px){
     header{
         flex-direction: column;
