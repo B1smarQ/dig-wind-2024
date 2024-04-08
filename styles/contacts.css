@@ -17,6 +17,10 @@
     width:80%;
     
 }
+body{
+    height:100dvh;
+    background: linear-gradient(black,#17092e) !important;
+}
 *{
     font-family: 'Banscrift'!important;
     color:white;

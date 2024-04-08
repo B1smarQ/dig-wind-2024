@@ -64,6 +64,8 @@ h3{
     width:40%;
     border-radius: 30px;
     margin-top:-50px;
+    z-index: 100;
+    text-align: center;
     
 }
 
@@ -71,10 +73,12 @@ h3{
     background-color: #C56E34;
 }
 #ad{
+    margin-left:10%;
+    margin-right:10%;
     width:100dvw;
     height:100dvh;
     min-height:800px;
-    display: flex;
+    
     justify-content: center;
     justify-items: center;
     align-items: center;
