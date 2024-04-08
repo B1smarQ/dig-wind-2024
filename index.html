@@ -114,7 +114,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="expeditions">
             <div class="container">
                 <button class="button buttonMore">Подробнее</button>
                 <div class="InfoBlock L_InfoBlock">
@@ -273,7 +273,7 @@
             </div>
         </section>
         
-        <section>
+        <section id="equipment">
             <div class="EquipmentBackgr">
                 <div class="EquipmentBackgr_title">Наше Оборудование</div>
                 <div class="EquipmentBackgr_text">Lorem ipsum dolor sit amet, consectetur 
@@ -304,12 +304,46 @@
                 </div>
             </div>
         </section>
-        
+
+        <section id="curators">
+            <div class="curatorsTitle">
+                <div class="curText">Вам помогут</div>
+            </div>
+            <div class="curators">
+                <div class="CuratorContainer">
+                    <img src="images/curator1.png" class="avatar" alt="">
+                    <div class="name">Виталий Булкин</div>
+                    <div class="descript">астроном с 20-летним стажем</div>
+                    <button class="button_Descript">узнать больше</button>
+                </div>
+                
+                <div class="CuratorContainer">
+                    <img src="images/curator2.png" class="avatar" alt="">
+                    <div class="name">Марина Кошкина</div>
+                    <div class="descript">астроном с 20-летним стажем</div>
+                    <button class="button_Descript">узнать больше</button>
+                </div>
+
+                <div class="CuratorContainer">
+                    <img src="images/curator3.png" class="avatar" alt="">
+                    <div class="name">Евгений Конфеткин</div>
+                    <div class="descript">астроном с 20-летним стажем</div>
+                    <button class="button_Descript">узнать больше</button>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        
+        <form class="footerForm">
+            <div id="footerText">Подпишитесь на рассылку, чтобы получать
+                уведомления о предстоящих поездках</div>
+            <input type = "email" placeholder = "E-mail" id = "email_Input" required>
+            <button id="followB">Подписаться</button>
+    
+        </form>
     </footer>
+
     <script src = "scripts/main.js"></script>
     <script src = "scripts/preloader.js"></script>
 </body>

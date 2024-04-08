@@ -184,7 +184,6 @@ div#titltP{
     color: white;
     background-color: #7C4D2D;
 
-    /* width: 255px; */
     height: 54px;
 
     font-size: 30px;
@@ -376,7 +375,6 @@ div#titltP{
     font-size: 30px;
     width: 45%;
 
-    /* text-align: center; */
     white-space: pre-line;
 }
 .Equipment_star {
@@ -415,11 +413,136 @@ div#titltP{
 }
 
 .telescope {
-    /* position: absolute; */
     height: 300px;
 }
 
+/* SECTION 4*/
+
+.curatorsTitle {
+    margin-top: 200px;
+    border-radius: 30px;
+
+    height: 60px;
+    background-color: #0C0F11;
+}
+.curText {
+    border-radius: 30px;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #191F23;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    line-height: 60px;
+
+    height: 60px;
+    width: 280px;
+}
+
+
+.curators {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.CuratorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.name {
+    margin-top: 25px;
+    font-size: 30px;
+    color: white;
+}
+.descript {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #a5a5a5;
+
+    text-align: center;
+}
+.button_Descript {
+    margin-top: 25px;
+    border-radius: 30px;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+
+    height: 40px;
+    width: 150px;
+}
+.button_Descript:hover {
+    background-color: #7C4D2D;
+    border: 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: #07090A;
+}
+#email_Input {
+    width: 30%;
+    height: 40px;
+    background-color: #191F23;
+
+    border: 0;
+    border-radius: 30px;
+    padding-left: 30px;
+
+    margin-top: 30px;
+
+    color: white;
+}
+#footerText {
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+
+    text-align: center;
+    white-space: pre-line;
+}
+.footerForm {
+    display: flex;
+    flex-direction: column;
+
+    height: 270px;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+#followB {
+    background-color: #7C4D2D;
+    border-radius: 30px;
+    height: 40px;
+    width: 150px;
+
+    margin-top: 20px;
+
+    color: white;
+}
+#followB:hover {
+    background-color: #C56E34;
+}
+
+
 @media (max-width: 1000px) {
+    .EquipmentBackgr {
+        height: 1200px;
+    }
     .Equipment_info_block {
         flex-direction: column;
         justify-content: center;
@@ -434,6 +557,22 @@ div#titltP{
         font-size: 25px;
 
         width: 70% !important;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+    .descript {
+        font-size: 15px;
+    }
+
+    #email_Input {
+        width: 60%;
     }
 }
 
@@ -475,5 +614,18 @@ div#titltP{
 
     .Equipment_star {
         display: none;
+    }
+
+
+
+    .curators {
+        flex-direction: column;
+    }
+    .CuratorContainer {
+        margin-bottom: 60px;
+    }
+
+    #email_Input {
+        width: 80%;
     }
 }
