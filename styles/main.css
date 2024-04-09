@@ -207,7 +207,6 @@ div#titltP{
 
     height: 230px;
     max-width: 300px;
-    min-width: 200px;
     background-color: #0C0F11;
     border-radius: 30px;
 }
@@ -487,59 +486,117 @@ div#titltP{
 }
 
 
-/* FOOTER */
 
-footer {
-    width: 100%;
-    background-color: #07090A;
+@media (min-width: 999px) {
+    #line {
+        display: none;
+    }
 }
-#email_Input {
-    width: 30%;
-    height: 40px;
-    background-color: #191F23;
-
-    border: 0;
-    border-radius: 30px;
-    padding-left: 30px;
-
-    margin-top: 30px;
-
-    color: white;
-}
-#footerText {
-    margin-top: 5px;
-    font-size: 20px;
-    color: white;
-
-    text-align: center;
-    white-space: pre-line;
-}
-.footerForm {
-    display: flex;
-    flex-direction: column;
-
-    height: 270px;
-    width: 100%;
-
-    justify-content: center;
-    align-items: center;
-}
-#followB {
-    background-color: #7C4D2D;
-    border-radius: 30px;
-    height: 40px;
-    width: 150px;
-
-    margin-top: 20px;
-
-    color: white;
-}
-#followB:hover {
-    background-color: #C56E34;
-}
-
 
 @media (max-width: 1000px) {
+
+    .EquipmentBackgr {
+        margin-top: 100px;
+    }
+
+    .container {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px auto 250px;
+        margin-bottom: 450px;
+    
+    }
+    .container:has(.buttonMore:focus) {
+        margin-bottom: 1050px;
+    }
+    .container2 {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px auto 250px;
+        margin-bottom: 450px;
+    
+    }
+    .container2:has(.buttonMore:focus) {
+        margin-bottom: 1050px;
+    }
+
+    .textBlocks_infoBlock > #card {
+        display: none;
+    }
+
+    .L_InfoBlock {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .R_InfoBlock {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .R_PriceBlock {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .L_PriceBlock {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .R_buttonMore {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .L_buttonMore {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .InfoBlock {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 0.7fr 0.7fr 0.7fr 0.5fr;
+    }
+    #titltP {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    #titltP > .tourTitle{
+        font-size: 50px;
+        margin-bottom: 2px;
+    }
+    #titltP > .tourSubtitle {
+        font-size: 20px;
+    }
+    .image {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .buttonMore:focus + .InfoBlock {
+        height: 900px;
+    }
+    .buttonBook {
+        margin-top: 0px;
+    }
+
+
+
+
+
     .EquipmentBackgr {
         height: 1200px;
     }
@@ -571,9 +628,7 @@ footer {
         font-size: 15px;
     }
 
-    #email_Input {
-        width: 60%;
-    }
+    
 }
 
 @media (max-width: 730px) {
@@ -625,7 +680,5 @@ footer {
         margin-bottom: 60px;
     }
 
-    #email_Input {
-        width: 80%;
-    }
+
 }
