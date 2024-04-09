@@ -632,6 +632,18 @@ div#titltP{
 }
 
 @media (max-width: 730px) {
+    .enjoyBlock {
+        width: 90%;
+        height: max-content;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        padding-bottom: 20px;
+    }
+    .ButtontoTours {
+        display: none;
+    }
+
     .EquipmentBackgr {
         height: 2000px;
     }

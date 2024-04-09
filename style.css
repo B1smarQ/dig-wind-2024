@@ -408,12 +408,9 @@ button {
     border-radius: 30px;
     border: 0;
 }
-<<<<<<< HEAD
 
 /* FOOTER */
 
-=======
->>>>>>> b01032f9d385a0a313f3859fce6c431e7187028b
 footer {
     width: 100%;
     background-color: #07090A;
@@ -462,7 +459,6 @@ footer {
 #followB:hover {
     background-color: #C56E34;
 }
-<<<<<<< HEAD
 
 @media (max-width: 1000px) {
     #email_Input {
@@ -475,5 +471,3 @@ footer {
         width: 80%;
     }
 }
-=======
->>>>>>> b01032f9d385a0a313f3859fce6c431e7187028b
