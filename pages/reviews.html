@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <div id = "preloader"></div>
         <noscript>
             <img src = "../images/No_js_err.png">
         </noscript>
@@ -33,10 +34,10 @@
                         <a href = "pages/about.html#gallery"> Галерея</a>
                     </div>
                 </div>
-                <div class = "link_container current_page Rev_link_container">
+                <div class = "link_container current_page Rev_link_container" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
                     <a href = "reviews.html">Отзывы</a>
                 </div>
-                <div class = "link_container Rev_link_container">
+                <div class = "link_container Rev_link_container" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
                     <a href = "contacts.html">Контакты</a>
                 </div>
             </div>
@@ -45,7 +46,7 @@
 
     <main>
         <section>
-            <div class="revTitle">
+            <div class="revTitle" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
                 <div class="revText">Отзывы с наших поездок</div>
             </div>
 
@@ -126,7 +127,7 @@
     </main>
 
     <footer>
-        <form class="footerForm" action = "pages/WIP_parallax.html">
+        <form class="footerForm" action = "WIP_parallax.html">
             <div id="footerText">Подпишитесь на рассылку, чтобы получать
                 уведомления о предстоящих поездках</div>
             <input type = "email" placeholder = "E-mail" id = "email_Input" required>
@@ -134,6 +135,8 @@
     
         </form>
     </footer>
+    <script src = '../scripts/main.js'></script>
+    <script src=" ../scripts/preloader.js"></script>
     
 </body>
 </html>
