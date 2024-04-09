@@ -4,7 +4,7 @@ window.addEventListener('load', function(){
     console.log("Loading");
     this.setTimeout(function(){
         FadeFunction();
-    },1000);
+    },500);
     
 })
 var opacity = 1;

@@ -3,81 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About us</title>
     <link rel = "stylesheet" href = "../style.css">
-    <script src = "../scripts/main.js"></script>
-</head>
-<body>
-    <div id = "preloader">
+    <link rel = "stylesheet" href="../styles/about.css">
+    <link rel = 'icon' type = 'image/x-icon' href = '../icons/favicon.ico'>
 
+    
+    
+</head>
+<body >
+    <div id = "preloader">
+        
     </div>
+    <form action = "WIP_parallax.html">
+        <div id = "login_window">
+            <div id = "login_box">
+                <h3>Войти в аккаунт</h3>
+                <div id = "login_form">
+                    <input type = "email" placeholder = "example@example.com" id = "login_input" required>
+                    <input type = "password" placeholder = "PASSWORD" id = "password_input" required minlength="5">
+                    <div id = "button_container">
+                        <button type = "submit"  id = "login_button" > Войти </button>
+                        <button type = "submit"  id = "sign_up_button" > Регистрация </button>
+                    </div>
+                    <button id ="login_cancel" onclick = "document.getElementById('login_window').style.display = 'none'; console.log('disabling login')" type = "reset">Отменон</button>
+                </div>
+            </div>
+        </div>
+    </form>
     <header>
         <noscript>
+            <style>
+                #preloader{
+                    display: none;
+                }
+            </style>
             <img src = "../images/No_js_err.png">
         </noscript>
         
         <nav class = "pages_bar">
-            
-            <div class = "link_container" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')">
-                <a href = "../index.html">Главная</a>
+            <div class id = "links">
+                <div class = "link_container"  id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')" >
+                    <a href = "../index.html">Главная</a>
+                    <div id = "main_sub_menu" class = "sub_menu">
+                        <a href = "../index.html#expeditions"> Экспедиции</a>
+                        <a href = "../index.html#equipment"> Оборудование</a>
+                        <a href = "../index.html#curators"> Кураторы</a>
+                    </div>
+                </div>
+                <div class = "link_container current_page" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')" >
+                    <a href = "about.html" > О нас</a>
+                    <div id = "about_sub_menu" class = "sub_menu">
+                        <a href = "about.html#creators"> Основатели</a>
+                        <a href = "about.html#curators"> Команда</a>
+                        <a href = "about.html#gallery"> Галерея</a>
+                    </div>
+                </div>
+                <div class = "link_container">
+                    <a href = "WIP_parallax.html">Отзывы</a>
+                </div>
+                <div class = "link_container">
+                    <a href = "contacts.html">Контакты</a>
+                </div>
             </div>
-            <div class = "link_container" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')">
-                <a href = "about.html" > О нас</a>
+            <div id = "login">
+                <img src = "../icons/account.svg">
+                <a onclick = "document.getElementById('login_window').style.display = 'flex'" href = "#">Авторизоваться</a>
             </div>
-            <div class = "link_container">
-                <a href = "WIP.html">Отзывы</a>
-            </div>
-            <div class = "link_container">
-                <a href = "WIP.html">Контакты</a>
-            </div>
-
-            <a id = "login">Авторизоваться</a>
         </nav>
-        <div class = "banner" style = "background-image: url('../images/about_banner.png');">
+        <div class = "banner" style = "background-image: url('../images/about_banner.png');" id = "top">
+            <div class = "banner_content">
             
-        </div>
-        <div class = "banner_content">
-            <div class = "sub_menus">
-                <div id = "main_sub_menu" class = "sub_menu">
-                    <a href = "../index.html#expeditions"> Экспедиции</a>
-                    <a href = "../index.html#equipment"> Оборудование</a>
-                    <a href = "../index.html#galery"> Галерея</a>
-                </div>
-                <div id = "about_sub_menu" class = "sub_menu">
-                    <a href = "#creators"> Основатели</a>
-                    <a href = "#curators"> Кураторы</a>
-                    <a href = "#team"> Команда</a>
-                </div>
-            </div>
 
-            <div class = "Title" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
-                <h2>Любишь смотреть на звезды? Присоединяйся к нам!</h2>
-                <h1>SKY</h1>
-                <h1>EXPEDITION</h1>
+                <div class = "Title" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
+                    <div class="upH">Любишь смотреть на звезды? Присоединяйся к нам!</div>
+                    <div class="HH">SKY EXPEDITION</div>
+                </div>
             </div>
         </div>
+
         <div id = "bottom_sub_menu">
             <nav class = "anchors">
                 <a href = "#creators">Основатели</a>
-                <a href = "#curators">Кураторы</a>
-                <a href = "#team">Команда</a>
+                <a href = "#curators">Команда</a>
+                <a href = "#gallery">Галерея</a>
             </nav>
             <nav id = "contacts">
-                <a href = "WIP.html"><img src = "../images/sms.svg"></a>
-                <a href = "WIP.html"><img src = "../images/phone.svg"></a>
-                <a href = "WIP.html"><img src = "../images/email.svg"></a>
+                <a href = "WIP_parallax.html"><img src = "../images/sms.svg"></a>
+                <a href = "WIP_parallax.html"><img src = "../images/phone.svg"></a>
+                <a href = "WIP_parallax.html"><img src = "../images/email.svg"></a>
                 
             </nav>
+        </div>
         </div>
     </header>
 
     <main>
+        
+        <div id = "ad" >
+            <div id = "ad_banner">
+                <div id = "about_ad_container">
+                    <div id = "text_ad">
+                        <h3 style = "margin-top:-10px;" >Погрузитесь в удивительный мир нашей Вселенной</h3>
+                        <p>
+                            Благодаря нашей команде, вы будете будут иметь возможность погрузиться в увлекательный мир космоса и расширить свои познания в астрономии, пользуясь профессиональным оборудованием
+                        </p>
+                    </div>
+                    <button id = "join_button" href = "WIP_parallax.html" onclick = "window.location.replace('WIP_parallax.html')"> Присоединиться </button>
+                </div>
+            </div>
+        </div>
+        <div class = "sub_title_container" >
+            <div class = "sub_title">
+                <div class = "sub_title_name">
+                    <h3 >Основатели</h3>
+                    
+                </div>
+                
+            </div>
 
+        </div>
+        
+            <div class = "photos_container hidden" id = "creators" >
+                <div class = "photo hidden">
+                    
+                    <img src = "../images/zvezdyuk.png">
+                    <h3>Иван Звездюк</h3>
+                    <p>Один из основателей известной по всей России астрономической компании "МММ"</p>
+                    <div class = "photos_socials">
+                        <a href = "WIP_parallax.html">
+                            <div class = "media_link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.99998 10.8846C8.24484 10.8846 8.45349 10.7984 8.62593 10.626C8.79836 10.4535 8.88458 10.2449 8.88458 10C8.88458 9.75514 8.79836 9.54649 8.62593 9.37406C8.45349 9.20162 8.24484 9.11541 7.99998 9.11541C7.75511 9.11541 7.54646 9.20162 7.37403 9.37406C7.20159 9.54649 7.11538 9.75514 7.11538 10C7.11538 10.2449 7.20159 10.4535 7.37403 10.626C7.54646 10.7984 7.75511 10.8846 7.99998 10.8846ZM12 10.8846C12.2448 10.8846 12.4535 10.7984 12.6259 10.626C12.7984 10.4535 12.8846 10.2449 12.8846 10C12.8846 9.75514 12.7984 9.54649 12.6259 9.37406C12.4535 9.20162 12.2448 9.11541 12 9.11541C11.7551 9.11541 11.5465 9.20162 11.374 9.37406C11.2016 9.54649 11.1154 9.75514 11.1154 10C11.1154 10.2449 11.2016 10.4535 11.374 10.626C11.5465 10.7984 11.7551 10.8846 12 10.8846ZM16 10.8846C16.2448 10.8846 16.4535 10.7984 16.6259 10.626C16.7984 10.4535 16.8846 10.2449 16.8846 10C16.8846 9.75514 16.7984 9.54649 16.6259 9.37406C16.4535 9.20162 16.2448 9.11541 16 9.11541C15.7551 9.11541 15.5465 9.20162 15.374 9.37406C15.2016 9.54649 15.1154 9.75514 15.1154 10C15.1154 10.2449 15.2016 10.4535 15.374 10.626C15.5465 10.7984 15.7551 10.8846 16 10.8846ZM2.5 21.0384V4.30773C2.5 3.8026 2.675 3.37503 3.025 3.02503C3.375 2.67503 3.80257 2.50003 4.3077 2.50003H19.6923C20.1974 2.50003 20.625 2.67503 20.975 3.02503C21.325 3.37503 21.5 3.8026 21.5 4.30773V15.6923C21.5 16.1974 21.325 16.625 20.975 16.975C20.625 17.325 20.1974 17.5 19.6923 17.5H6.03845L2.5 21.0384ZM5.4 16H19.6923C19.7692 16 19.8397 15.968 19.9038 15.9039C19.9679 15.8397 20 15.7692 20 15.6923V4.30773C20 4.2308 19.9679 4.16027 19.9038 4.09616C19.8397 4.03206 19.7692 4.00001 19.6923 4.00001H4.3077C4.23077 4.00001 4.16024 4.03206 4.09613 4.09616C4.03202 4.16027 3.99998 4.2308 3.99998 4.30773V17.3846L5.4 16Z" fill="white"/>
+                                    </svg>
+                                    
+                                    
+                            </div>
+                        </a>
+                        <a href = "WIP_parallax.html">
+                            <div class = "media_link">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.4403 17.5C14.5557 17.5 12.6625 17.0618 10.7606 16.1856C8.85863 15.3093 7.11121 14.0731 5.51828 12.4769C3.92532 10.8808 2.69071 9.13333 1.81442 7.23463C0.938142 5.33592 0.5 3.44426 0.5 1.55966C0.5 1.25691 0.6 1.00462 0.8 0.802782C1 0.600948 1.25 0.500031 1.55 0.500031H4.8115C5.06407 0.500031 5.28682 0.582406 5.47977 0.747156C5.67272 0.911906 5.79548 1.11543 5.84803 1.35773L6.4211 4.30001C6.46085 4.57309 6.45252 4.80771 6.3961 5.00386C6.3397 5.20001 6.23842 5.36475 6.09225 5.49808L3.78265 7.74616C4.15445 8.42692 4.57913 9.07083 5.0567 9.67788C5.53427 10.2849 6.05125 10.8648 6.60765 11.4173C7.15638 11.966 7.73973 12.4757 8.35768 12.9462C8.97563 13.4167 9.64293 13.8545 10.3596 14.2596L12.6038 11.9962C12.7602 11.8334 12.9497 11.7193 13.1721 11.6539C13.3945 11.5885 13.6256 11.5725 13.8654 11.6058L16.6423 12.1712C16.8948 12.2378 17.1009 12.3667 17.2605 12.5577C17.4201 12.7487 17.5 12.9654 17.5 13.2077V16.45C17.5 16.75 17.399 17 17.1972 17.2C16.9954 17.4 16.7431 17.5 16.4403 17.5ZM3.07305 6.32696L4.85768 4.61926C4.88973 4.59361 4.91056 4.55835 4.92018 4.51348C4.92979 4.4686 4.92819 4.42693 4.91538 4.38848L4.48075 2.15386C4.46793 2.10257 4.4455 2.06411 4.41345 2.03848C4.3814 2.01283 4.33973 2.00001 4.28845 2.00001H2.14997C2.11152 2.00001 2.07948 2.01283 2.05383 2.03848C2.02818 2.06411 2.01535 2.09616 2.01535 2.13463C2.06663 2.81796 2.17849 3.5122 2.35092 4.21733C2.52337 4.92246 2.76408 5.62567 3.07305 6.32696ZM11.773 14.9692C12.4359 15.2782 13.1272 15.5144 13.8471 15.6779C14.567 15.8414 15.2397 15.9385 15.8654 15.9692C15.9038 15.9692 15.9359 15.9564 15.9615 15.9308C15.9872 15.9051 16 15.8731 16 15.8346V13.7308C16 13.6795 15.9872 13.6378 15.9615 13.6058C15.9359 13.5737 15.8974 13.5513 15.8461 13.5385L13.7461 13.1115C13.7077 13.0987 13.674 13.0971 13.6452 13.1067C13.6163 13.1163 13.5859 13.1372 13.5538 13.1692L11.773 14.9692Z" fill="white"/>
+                                </svg>
+                                    
+                            </div>
+                        </a>
+                        <a href = "WIP_parallax.html">
+                            <div class = "media_link">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.3077 15.5C1.80257 15.5 1.375 15.325 1.025 14.975C0.675 14.625 0.5 14.1974 0.5 13.6923V2.30773C0.5 1.8026 0.675 1.37503 1.025 1.02503C1.375 0.675031 1.80257 0.500031 2.3077 0.500031H17.6923C18.1974 0.500031 18.625 0.675031 18.975 1.02503C19.325 1.37503 19.5 1.8026 19.5 2.30773V13.6923C19.5 14.1974 19.325 14.625 18.975 14.975C18.625 15.325 18.1974 15.5 17.6923 15.5H2.3077ZM9.99998 8.55766L1.99998 3.44228V13.6923C1.99998 13.782 2.02883 13.8558 2.08653 13.9135C2.14423 13.9712 2.21795 14 2.3077 14H17.6923C17.782 14 17.8557 13.9712 17.9134 13.9135C17.9711 13.8558 18 13.782 18 13.6923V3.44228L9.99998 8.55766ZM9.99998 7.00001L17.8461 2.00001H2.15383L9.99998 7.00001ZM1.99998 3.44228V2.00001V13.6923C1.99998 13.782 2.02883 13.8558 2.08653 13.9135C2.14423 13.9712 2.21795 14 2.3077 14H1.99998V3.44228Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div style = "position: relative; z-index:2; width:100%;" class = "hidden">
+                    <img src = "../icons/Star.svg" style = "position:absolute;top:-50px;left:95%; width: 82px; height:77px">
+                    </div>
+                </div>
+                <div class = "photo hidden">
+                    
+                    <img src = "../images/tumka.png">
+                    <h3>Татьяна Тумка</h3>
+                    <p>Известный психолог, нумеролог, астролог, таролог, мамолог, гинеколог, археолог, геолог, отолоринголог, проктолог</p>
+                    <div class = "photos_socials">
+                        <a href = "WIP_parallax.html" >
+                            <div class = "media_link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.99998 10.8846C8.24484 10.8846 8.45349 10.7984 8.62593 10.626C8.79836 10.4535 8.88458 10.2449 8.88458 10C8.88458 9.75514 8.79836 9.54649 8.62593 9.37406C8.45349 9.20162 8.24484 9.11541 7.99998 9.11541C7.75511 9.11541 7.54646 9.20162 7.37403 9.37406C7.20159 9.54649 7.11538 9.75514 7.11538 10C7.11538 10.2449 7.20159 10.4535 7.37403 10.626C7.54646 10.7984 7.75511 10.8846 7.99998 10.8846ZM12 10.8846C12.2448 10.8846 12.4535 10.7984 12.6259 10.626C12.7984 10.4535 12.8846 10.2449 12.8846 10C12.8846 9.75514 12.7984 9.54649 12.6259 9.37406C12.4535 9.20162 12.2448 9.11541 12 9.11541C11.7551 9.11541 11.5465 9.20162 11.374 9.37406C11.2016 9.54649 11.1154 9.75514 11.1154 10C11.1154 10.2449 11.2016 10.4535 11.374 10.626C11.5465 10.7984 11.7551 10.8846 12 10.8846ZM16 10.8846C16.2448 10.8846 16.4535 10.7984 16.6259 10.626C16.7984 10.4535 16.8846 10.2449 16.8846 10C16.8846 9.75514 16.7984 9.54649 16.6259 9.37406C16.4535 9.20162 16.2448 9.11541 16 9.11541C15.7551 9.11541 15.5465 9.20162 15.374 9.37406C15.2016 9.54649 15.1154 9.75514 15.1154 10C15.1154 10.2449 15.2016 10.4535 15.374 10.626C15.5465 10.7984 15.7551 10.8846 16 10.8846ZM2.5 21.0384V4.30773C2.5 3.8026 2.675 3.37503 3.025 3.02503C3.375 2.67503 3.80257 2.50003 4.3077 2.50003H19.6923C20.1974 2.50003 20.625 2.67503 20.975 3.02503C21.325 3.37503 21.5 3.8026 21.5 4.30773V15.6923C21.5 16.1974 21.325 16.625 20.975 16.975C20.625 17.325 20.1974 17.5 19.6923 17.5H6.03845L2.5 21.0384ZM5.4 16H19.6923C19.7692 16 19.8397 15.968 19.9038 15.9039C19.9679 15.8397 20 15.7692 20 15.6923V4.30773C20 4.2308 19.9679 4.16027 19.9038 4.09616C19.8397 4.03206 19.7692 4.00001 19.6923 4.00001H4.3077C4.23077 4.00001 4.16024 4.03206 4.09613 4.09616C4.03202 4.16027 3.99998 4.2308 3.99998 4.30773V17.3846L5.4 16Z" fill="white"/>
+                                    </svg>
+                                    
+                                    
+                            </div>
+                        </a>
+                        <a href = "WIP_parallax.html">
+                            <div class = "media_link">
+                                <svg width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.4403 17.5C14.5557 17.5 12.6625 17.0618 10.7606 16.1856C8.85863 15.3093 7.11121 14.0731 5.51828 12.4769C3.92532 10.8808 2.69071 9.13333 1.81442 7.23463C0.938142 5.33592 0.5 3.44426 0.5 1.55966C0.5 1.25691 0.6 1.00462 0.8 0.802782C1 0.600948 1.25 0.500031 1.55 0.500031H4.8115C5.06407 0.500031 5.28682 0.582406 5.47977 0.747156C5.67272 0.911906 5.79548 1.11543 5.84803 1.35773L6.4211 4.30001C6.46085 4.57309 6.45252 4.80771 6.3961 5.00386C6.3397 5.20001 6.23842 5.36475 6.09225 5.49808L3.78265 7.74616C4.15445 8.42692 4.57913 9.07083 5.0567 9.67788C5.53427 10.2849 6.05125 10.8648 6.60765 11.4173C7.15638 11.966 7.73973 12.4757 8.35768 12.9462C8.97563 13.4167 9.64293 13.8545 10.3596 14.2596L12.6038 11.9962C12.7602 11.8334 12.9497 11.7193 13.1721 11.6539C13.3945 11.5885 13.6256 11.5725 13.8654 11.6058L16.6423 12.1712C16.8948 12.2378 17.1009 12.3667 17.2605 12.5577C17.4201 12.7487 17.5 12.9654 17.5 13.2077V16.45C17.5 16.75 17.399 17 17.1972 17.2C16.9954 17.4 16.7431 17.5 16.4403 17.5ZM3.07305 6.32696L4.85768 4.61926C4.88973 4.59361 4.91056 4.55835 4.92018 4.51348C4.92979 4.4686 4.92819 4.42693 4.91538 4.38848L4.48075 2.15386C4.46793 2.10257 4.4455 2.06411 4.41345 2.03848C4.3814 2.01283 4.33973 2.00001 4.28845 2.00001H2.14997C2.11152 2.00001 2.07948 2.01283 2.05383 2.03848C2.02818 2.06411 2.01535 2.09616 2.01535 2.13463C2.06663 2.81796 2.17849 3.5122 2.35092 4.21733C2.52337 4.92246 2.76408 5.62567 3.07305 6.32696ZM11.773 14.9692C12.4359 15.2782 13.1272 15.5144 13.8471 15.6779C14.567 15.8414 15.2397 15.9385 15.8654 15.9692C15.9038 15.9692 15.9359 15.9564 15.9615 15.9308C15.9872 15.9051 16 15.8731 16 15.8346V13.7308C16 13.6795 15.9872 13.6378 15.9615 13.6058C15.9359 13.5737 15.8974 13.5513 15.8461 13.5385L13.7461 13.1115C13.7077 13.0987 13.674 13.0971 13.6452 13.1067C13.6163 13.1163 13.5859 13.1372 13.5538 13.1692L11.773 14.9692Z" fill="white"/>
+                                </svg>
+                                    
+                            </div>
+                        </a>
+                        <a href = "WIP_parallax.html">
+                            <div class = "media_link">
+                                <svg width="24" height="24" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.3077 15.5C1.80257 15.5 1.375 15.325 1.025 14.975C0.675 14.625 0.5 14.1974 0.5 13.6923V2.30773C0.5 1.8026 0.675 1.37503 1.025 1.02503C1.375 0.675031 1.80257 0.500031 2.3077 0.500031H17.6923C18.1974 0.500031 18.625 0.675031 18.975 1.02503C19.325 1.37503 19.5 1.8026 19.5 2.30773V13.6923C19.5 14.1974 19.325 14.625 18.975 14.975C18.625 15.325 18.1974 15.5 17.6923 15.5H2.3077ZM9.99998 8.55766L1.99998 3.44228V13.6923C1.99998 13.782 2.02883 13.8558 2.08653 13.9135C2.14423 13.9712 2.21795 14 2.3077 14H17.6923C17.782 14 17.8557 13.9712 17.9134 13.9135C17.9711 13.8558 18 13.782 18 13.6923V3.44228L9.99998 8.55766ZM9.99998 7.00001L17.8461 2.00001H2.15383L9.99998 7.00001ZM1.99998 3.44228V2.00001V13.6923C1.99998 13.782 2.02883 13.8558 2.08653 13.9135C2.14423 13.9712 2.21795 14 2.3077 14H1.99998V3.44228Z" fill="white"/>
+                                </svg>
+                            </div>
+                                
+                        </a>
+                        
+                    </div>
+                    <div style = "position: relative; z-index:2; width:100%;" class = "hidden">
+                        <img src = "../icons/Star.svg" style = "position:absolute;top:-50px;left:95%; width: 82px; height:77px">
+                    </div>
+                </div>
+            </div>
+            <button onclick = "topFunction();" id = "up_button">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.1667 36.6667V14.3459L9.90004 24.6125L7.33337 22L22 7.33337L36.6667 22L34.1 24.6125L23.8334 14.3459V36.6667H20.1667Z" fill="#FFF"/>
+                </svg>
+                    
+            </button>
+            <div class="sub_title_container" >
+                <div class = "sub_title">
+                    <div class = "sub_title_name">
+                        <h3>Наша команда</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "photos_container_team hidden"  id = "curators" >
+                <div class="photo_multiple hidden" >
+                    <img src = "../images/bulkina.jpg" class = "photo_multiple_photo">
+                    <h3> Виталий Булкин</h3>
+                    <p>Астроном с 20-летним стажем</p>
+                    <a class = "team_profile_link" href = "WIP_parallax.html">Узнать больше</a>
+                </div>
+                <div class = "photo_multiple hidden">
+                    <img src = "../images/koshkina.jpg" class = "photo_multiple_photo">
+                    <h3> Марина Кошкина</h3>
+                    <p>Chipi Chipi Chapa Chapa</p>
+                    <a class = "team_profile_link" href = "WIP_parallax.html">Узнать больше</a>
+                </div>
+                <div class = "photo_multiple hidden">
+                    <img src = "../images/konfetkin.jpg " class = "photo_multiple_photo">
+                    <h3> Женя Конфеткин</h3>
+                    <p>Астроном с 20-летним стажем</p>
+                    <a class = "team_profile_link" href = "WIP_parallax.html">Узнать больше</a>
+                </div>
+                <div class = "photo_multiple hidden">
+                    <img src = "../images/grobova.jpg" class = "photo_multiple_photo">
+                    <h3> Анна ГрОбова</h3>
+                    <p>Астроном с 20-летним стажем</p>
+                    <a class = "team_profile_link" href = "WIP_parallax.html">Узнать больше</a>
+                </div>
+                <div class = "photo_multiple hidden">
+                    <img src = "../images/morzh.jpg" class = "photo_multiple_photo">
+                    <h3> Василий Морж</h3>
+                    <p>Астроном с 20-летним стажем</p>
+                    <a class = "team_profile_link" href = "WIP_parallax.html">Узнать больше</a>
+                </div>
+                <div class = "photo_multiple hidden">
+                    <img src = "../images/mukha.jpg" class = "photo_multiple_photo">
+                    <h3> Елена Мухина</h3>
+                    <p>Астроном с 20-летним стажем</p>
+                    <a class = "team_profile_link" href = "WIP_parallax.html">Узнать больше</a>
+                </div>
+            </div>
+            
+            <div class="sub_title_container" >
+                <div class = "sub_title">
+                    <div class = "sub_title_name">
+                        <h3>Галерея</h3>
+                    </div>
+                </div>
+            </div>
+            <div class = "tours hidden" id = "gallery">
+                <div class = "tour_photo" style = "grid-column: 1/3; background-image: url('../images/tour_1.png');">
+                
+            </div>
+                <div class = "tour_info hidden" >
+                    <h3>Персеиды</h3>
+                    <h4>Метеоритный поток</h4>
+                    <h3>14 - 24 августа</h3>
+
+                    <a class = "photo_link hidden" href = "WIP_parallax.html">Смотреть фото</a>
+                </div>
+                <div class = "tour_info hidden" >
+                    <h3>Персеиды</h3>
+                    <h4>Метеоритный поток</h4>
+                    <h3>14 - 24 августа</h3>
+
+                    <a class = "photo_link hidden" href = "WIP_parallax.html" >Смотреть фото</a>
+                </div>
+                <div class = "tour_photo hidden" class = "hidden" style = "grid-column: 2/4; background-image: url('../images/tour_2.png');" >
+                    
+                </div>
+                <div class = "tour_photo hidden" class = "hidden" style = "grid-column: 1/3; background-image: url('../images/tour_3.png');">
+                    
+                </div>
+                <div class = "tour_info hidden " class = "hidden">
+                    <h3>Персеиды</h3>
+                    <h4>Метеоритный поток</h4>
+                    <h3>14 - 24 августа</h3>
+
+                    <a class = "photo_link hidden" href = "WIP_parallax.html">Смотреть фото</a>
+                </div>
+            </div>
+        
     </main>
 
     <footer>
-
+        <form class="footerForm" action = "WIP_parallax.html">
+            <div id="footerText">Подпишитесь на рассылку, чтобы получать
+                уведомления о предстоящих поездках</div>
+            <input type = "email" placeholder = "E-mail" id = "email_Input" required>
+            <button id="followB">Подписаться</button>
+    
+        </form>
     </footer>
+    
+    <script src = "../scripts/main.js"></script>
+    
     <script src = "../scripts/preloader.js"></script>
 </body>
 </html>

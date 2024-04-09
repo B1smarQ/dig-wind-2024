@@ -3,41 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact us</title>
     <link rel = "stylesheet" href = "../style.css">
+    <link rel="stylesheet" href="../styles/contacts.css">
+    <link rel = 'icon' type = 'image/x-icon' href = '../icons/favicon.ico'>
+
 </head>
 <body>
-    <header>
-        <noscript>
-            <img src = "../images/No_js_err.png">
-        </noscript>
-        <noscript>
-            <img src = "images/No_js_err.png">
-        </noscript>
-        <nav>
+        <div id = "preloader">
+        
+        </div>
+        <form action = "WIP_parallax.html">
+            <div id = "login_window">
+                <div id = "login_box">
+                    <h3 style = "text-align: center;">Войти в аккаунт</h3>
+                    <div id = "login_form">
+                        <input type = "email" placeholder = "example@example.com" id = "login_input" required>
+                        <input type = "password" placeholder = "PASSWORD" id = "password_input" required minlength="5">
+                        <div id = "button_container">
+                            <button type = "submit"  id = "login_button" > Войти </button>
+                            <button type = "submit"  id = "sign_up_button"  > Регистрация </button>
+                        </div>
+                        <button id ="login_cancel" onclick = "document.getElementById('login_window').style.display = 'none'; console.log('disabling login')" type = "reset">Отменон</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <header>
+            <noscript>
+                <style>
+                    #preloader{
+                        display: none;
+                    }
+                </style>
+                <img src = "../images/No_js_err.png">
+            </noscript>
             
-            <div class = "link_container" id = "main_menu" onfocus="activate_menu('main_sub_menu')">
-                <a href = "../index.html">Главная</a>
-            </div>
-            <div class = "link_container" id = "about_menu" onfocus="deactivate_menu('main_sub_menu')">
-                <a href = "about.html" > О нас</a>
-            </div>
-            <div class = "link_container">
-                <a href = "reviews.html">Отзывы</a>
-            </div>
-            <div class = "link_container">
-                <a href = "contacts.html">Контакты</a>
-            </div>
-
-            <a id = "login">Авторизоваться</a>
+            <nav class = "pages_bar">
+                <div class id = "links">
+                    <div class = "link_container"  id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')" >
+                        <a href = "../index.html">Главная</a>
+                        <div id = "main_sub_menu" class = "sub_menu">
+                            <a href = "#expeditions"> Экспедиции</a>
+                            <a href = "#equipment"> Оборудование</a>
+                            <a href = "#curators"> Кураторы</a>
+                        </div>
+                    </div>
+                    <div class = "link_container " id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')" >
+                        <a href = "about.html" > О нас</a>
+                        <div id = "about_sub_menu" class = "sub_menu">
+                            <a href = "about.html#creators"> Основатели</a>
+                            <a href = "about.html#curators"> Команда</a>
+                            <a href = "about.html#gallery"> Галерея</a>
+                        </div>
+                    </div>
+                    <div class = "link_container">
+                        <a href = "WIP_parallax.html">Отзывы</a>
+                    </div>
+                    <div class = "link_container current_page">
+                        <a href = "WIP_parallax.html">Контакты</a>
+                    </div>
+                </div>
+                <div id = "login">
+                    <img src = "../icons/account.svg">
+                    <a onclick = "document.getElementById('login_window').style.display = 'flex'" href = "#">Авторизоваться</a>
+                </div>
+            </nav>
     </header>
 
     <main>
+        <div id = "contacts_container">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa2efd02966b70d3f7845111c371bb98be9f494f21eef35958b0b2efc67cdd5f8&amp;source=constructor" width="700" height="600" frameborder="0"></iframe>
+            <div id = "information">
+                <h2>Появились вопросы?</h2>
+                <div id = "contact_info">
+                    <div id = "social_networks">
+                        <h3>Мы в социальных сетях</h3>
+                        <nav id = "socials_links">
 
+                            <a href = "WIP_parallax.html">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.9373 2.82068L19.6174 19.7927C19.3669 20.9906 18.7137 21.2886 17.7855 20.7245L12.727 16.6837L10.2862 19.2284C10.0162 19.5212 9.79018 19.7662 9.2696 19.7662L9.63302 14.1815L19.0084 4.99807C19.4161 4.60413 18.9201 4.38583 18.3749 4.77983L6.78454 12.6909L1.79479 10.9979C0.709414 10.6305 0.689838 9.82132 2.02068 9.25707L21.5376 1.10651C22.4412 0.739184 23.2319 1.3247 22.9373 2.82068Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" id = "TG" fill ='none'/>
+                                </svg>
+                                
+                            </a>
+                            <a href = 'WIP_parallax.html'> 
+                                <svg width="34" height="22" viewBox="0 0 34 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.0406 2.35629C32.2589 1.57509 32.0406 1.00008 30.991 1.00008H27.5177C26.6333 1.00008 26.2263 1.49381 26.0082 2.04383C26.0082 2.04383 24.2392 6.61251 21.7389 9.57496C20.9311 10.4312 20.5596 10.7062 20.1173 10.7062C19.8993 10.7062 19.563 10.4311 19.563 9.64994V2.35622C19.563 1.41875 19.3153 1 18.5841 1H13.1238C12.5695 1 12.2393 1.43751 12.2393 1.84372C12.2393 2.73113 13.4894 2.93739 13.6192 5.4374V10.8624C13.6192 12.0499 13.4186 12.2685 12.9764 12.2685C11.7971 12.2685 8.9312 7.68118 7.23295 2.4312C6.89098 1.41252 6.55482 1 5.66438 1H2.1912C1.20055 1 1 1.49373 1 2.04375C1 3.01867 2.17937 7.86252 6.48995 14.2625C9.36169 18.6311 13.4069 21 17.0864 21C19.2977 21 19.569 20.475 19.569 19.5688C19.569 15.3937 19.3685 14.9999 20.4772 14.9999C20.9901 14.9999 21.8747 15.2748 23.9387 17.3811C26.2972 19.8811 26.6864 21 28.0074 21H31.4805C32.4712 21 32.9725 20.475 32.6835 19.4374C32.0231 17.2563 27.5592 12.7687 27.3587 12.4687C26.8457 11.7687 26.993 11.4561 27.3587 10.831C27.3646 10.825 31.6043 4.50001 32.0406 2.35629Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" id = "VK"/>
+                                    </svg>
+                                    
+                            </a>
+                            <a href="WIP_parallax.html"> 
+                                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg" id = "YT">
+                                    <g clip-path="url(#clip0_348_75)">
+                                    <path d="M21.7083 0H5.38843C2.41718 0 0 2.43601 0 5.43024V14.5698C0 17.564 2.41718 20 5.38843 20H21.7083C24.6796 20 27.0968 17.564 27.0968 14.5698V5.43024C27.0968 2.43601 24.6796 0 21.7083 0ZM25.9908 14.5698C25.9908 16.9512 24.0696 18.8889 21.7083 18.8889H5.38843C3.02714 18.8889 1.10599 16.9512 1.10599 14.5698V5.43024C1.10599 3.04879 3.02714 1.11111 5.38843 1.11111H21.7083C24.0696 1.11111 25.9908 3.04879 25.9908 5.43024V14.5698Z" fill="white"/>
+                                    <path d="M18.4483 9.79902L10.7866 5.29052C10.6165 5.19046 10.4042 5.18879 10.2322 5.28785C10.0602 5.38685 9.9541 5.57074 9.9541 5.76985V14.7857C9.9541 14.9848 10.0602 15.1687 10.2319 15.2677C10.3172 15.3168 10.4123 15.3413 10.5071 15.3413C10.6037 15.3413 10.7001 15.3158 10.7866 15.2651L18.4483 10.7577C18.6176 10.6581 18.7218 10.4756 18.7218 10.2783C18.7218 10.0811 18.6179 9.89857 18.4483 9.79902ZM11.0601 13.8165V6.73913L17.0745 10.2783L11.0601 13.8165Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_348_75">
+                                    <rect width="27.0968" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>                                
+                            </a>
+                        </nav>
+                        <h3>Почта для ваших вопросов</h3>
+                        <nav>
+                            <img src = '../images/email.svg'>
+                            <p>skyexpedition@example.com</p>
+                        </nav>
+                    </div>
+                    <div id = "phone">
+                        <div>
+                            <h4>Москва</h4>
+                            <p>8(800)555-35-35</p>
+                        </div>
+                        <div>
+                            <h4>Санкт-Петербург</h4>
+                            <p>8(800)555-35-35</p>
+                        </div>
+                        <div>
+                            <h4>Саратов</h4>
+                            <p>8(800)555-35-35</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-
+        <script src = '../scripts/preloader.js'></script>
+        <script src = "../scripts/main.js"></script>
+        <form class="footerForm" action = "WIP_parallax.html">
+            <div id="footerText">Подпишитесь на рассылку, чтобы получать
+                уведомления о предстоящих поездках</div>
+            <input type = "email" placeholder = "E-mail" id = "email_Input" required>
+            <button id="followB">Подписаться</button>
+    
+        </form>
     </footer>
     
 </body>

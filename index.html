@@ -5,84 +5,347 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sky Expedition</title>
     <link rel = "stylesheet" href = "style.css">
-    <script src = "scripts/main.js"></script>
+    <link rel = "stylesheet" href = "styles/main.css">
+    <link rel = 'icon' type = 'image/x-icon' href = 'icons/favicon.ico'>
+    
 </head>
 <body>
     <div id = "preloader">
 
     </div>
-
+    <form action = "pages/WIP_parallax.html">
+        <div id = "login_window">
+            <div id = "login_box">
+                <h3 id = "login_title">Войти в аккаунт</h3>
+                <div id = "login_form">
+                    <input type = "email" placeholder = "example@example.com" id = "login_input" required>
+                    <input type = "password" placeholder = "PASSWORD" id = "password_input" required minlength="5">
+                    <div id = "button_container">
+                        <button type = "submit"  id = "login_button"  > Войти </button>
+                        <button type = "submit"  id = "sign_up_button" > Регистрация </button>
+                    </div>
+                    <button id ="login_cancel" onclick = "document.getElementById('login_window').style.display = 'none'; console.log('disabling login')" type = "reset">Отменон</button>
+                </div>
+            </div>
+        </div>
+    </form>
     <header>
         <noscript>
+            <style>
+                #preloader{
+                    display: none;
+                }
+            </style>
             <img src = "images/No_js_err.png">
         </noscript>
         <nav class = "pages_bar">
             <div class id = "links">
-                <div class = "link_container" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')" >
+                <div class = "link_container current_page" style="background-color: #191F23;" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')" >
                     <a href = "index.html">Главная</a>
+                    <div id = "main_sub_menu" class = "sub_menu">
+                        <a href = "#expeditions"> Экспедиции</a>
+                        <a href = "#equipment"> Оборудование</a>
+                        <a href = "#curators"> Кураторы</a>
+                    </div>
                 </div>
                 <div class = "link_container" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')" >
                     <a href = "pages/about.html" > О нас</a>
+                    <div id = "about_sub_menu" class = "sub_menu">
+                        <a href = "pages/about.html#creators"> Основатели</a>
+                        <a href = "pages/about.html#team"> Команда</a>
+                        <a href = "pages/about.html#gallery"> Галерея</a>
+                    </div>
                 </div>
                 <div class = "link_container">
-                    <a href = "pages/WIP.html">Отзывы</a>
+                    <a href = "pages/WIP_parallax.html">Отзывы</a>
                 </div>
                 <div class = "link_container">
-                    <a href = "pages/WIP.html">Контакты</a>
+                    <a href = "pages/contacts.html">Контакты</a>
                 </div>
             </div>
-
-            <div class = "login">
-                <img src="icons/account.svg" alt="">
-                <a id = "login">Авторизоваться</a>
+            <div class = "link_container" id = 'login' style="margin: 0;">
+                <img src = "icons/account.svg">
+                <a onclick = "document.getElementById('login_window').style.display = 'flex'" href = "#">Авторизоваться</a>
             </div>
         </nav>
         
-        <div class = "banner" >
-            
-        </div>
-        <div class = "banner_content">
-            <div class = "sub_menus">
-                <div id = "main_sub_menu" class = "sub_menu">
-                    <a href = "#expeditions"> Экспедиции</a>
-                    <a href = "#equipment"> Оборудование</a>
-                    <a href = "#galery"> Галерея</a>
-                </div>
-                <div id = "about_sub_menu" class = "sub_menu">
-                    <a href = "pages/about.html#creators"> Основатели</a>
-                    <a href = "pages/about.html#curators"> Кураторы</a>
-                    <a href = "pages/about.html#team"> Команда</a>
+        <div class = "banner " id = "top">
+            <div class = "banner_content ">
+                <div class = "Title" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
+                    <div class="upH">Любишь смотреть на звезды? Присоединяйся к нам!</div>
+                    <div class="HH">SKY EXPEDITION</div>
                 </div>
             </div>
-
-            <div class = "Title" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
-                <h2>Любишь смотреть на звезды? Присоединяйся к нам!</h2>
-                <h1>SKY</h1>
-                <h1>EXPEDITION</h1>
-            </div>
         </div>
+        
         <div id = "bottom_sub_menu">
             <nav class = "anchors">
                 <a href = "#expeditions">Экспедиции</a>
                 <a href = "#equipment">Оборудование</a>
-                <a href = "#gallery">Галерея</a>
+                <a href = "#curators">Кураторы</a>
             </nav>
             <nav id = "contacts">
-                <a href = "pages/WIP.html"><img src = "images/sms.svg" href = "pages/WIP.html"></a>
-                <a href = "pages/WIP.html"><img src = "images/phone.svg"href = "pages/WIP.html"></a>
-                <a href = "pages/WIP.html"><img src = "images/email.svg"></a>
+                <a href = "pages/WIP_parallax.html"><img src = "images/sms.svg" href = "pages/WIP_parallax.html"></a>
+                <a href = "pages/WIP_parallax.html"><img src = "images/phone.svg"href = "pages/WIP_parallax.html"></a>
+                <a href = "pages/WIP_parallax.html"><img src = "images/email.svg"></a>
                 
             </nav>
+
         </div>
+        <button onclick = "topFunction()" id = "up_button">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.1667 36.6667V14.3459L9.90004 24.6125L7.33337 22L22 7.33337L36.6667 22L34.1 24.6125L23.8334 14.3459V36.6667H20.1667Z" fill="#FFF"/>
+            </svg>
+        </button>
     </header>
 
     <main>
+        <section class="hello">
+            <div class="enjoyBlock">
+                <div class="Hh">Хотите в необычный тур? Вы по адресу!</div>
+                <p class="text">Мы предоставляем возможность участвовать
+                    в ночных наблюдениях под руководством 
+                    опытных астрономов, c использованием 
+                    профессионального
+                    оборудования </p>
+                <p class="text">
+                    Путешествие с нами станет незабываемым 
+                    опытом для всех, кто увлечен космосом и хочет
+                    погрузиться в его мир</p>
+                <button class="ButtontoTours" onclick = "window.location.replace('#expeditions')">Присоединиться</button>
+            </div>
+        </section>
 
+        <section id="expeditions">
+            <div class="container">
+                <button class="button buttonMore">Подробнее</button>
+                <div class="InfoBlock L_InfoBlock">
+                    
+                    <img class="image" src="images/perseidy.jpg" alt="">
+
+                    <div class="textBlocks_infoBlock" id = "titltP">
+                        <div class="tourTitle">Персеиды</div>
+                        <div class="tourSubtitle">метеорный поток</div>
+                        <p class="text" id="card">Увлекательное приключение под открытым небом, 
+                            вдали от городской суеты, где можно четко увидеть метеорный поток. </p>
+                            
+                        <p class="text" id="card">Вы сможете насладиться невероятным зрелищем метеорного
+                            дождя и провести время в кругу единомышленников</p>
+                    </div>
+
+                    <div class="textBlocks_infoBlock">
+                        <div class="tourTitle">Тур проводит</div>
+                        <p class="text">Астроном-любитель с 10-летним стажем, одна
+                            из кураторов проекта, опытный астрофотограф - Марина Кошкина</p>
+                    </div>
+
+                    <div class="textBlocks_infoBlock">
+                        <div class="tourTitle">Место проведения</div>
+                        <p class="text" style="white-space: pre-line;">Республика Дагестан, село Гельхен –
+                            Благодаря удаленности от больших городов световое загрязнение почти полностью отсутствует</p>
+                    </div>
+
+                    <div class="textBlocks_infoBlock" style="margin-top: 0px;">
+                        <div class="tourTitle">Проживание</div>
+                        <p class="text">Палатки под открытым небом ночью, хостел днём </p>
+                    </div>
+
+                    <div class="textBlocks_infoBlock" style="margin-top: 0px;">
+                        <button class="buttonBook">Бронировать</button>
+                    </div>
+                    
+                    
+                </div>
+                <div class="PriceBlock R_PriceBlock">
+                    <div class="sizeofGroup">
+                        <div class="GroupText">Количество человек в группе</div>
+                        <div class="number">15-20</div>
+                    </div>
+                    <div class="sizeofGroup">
+                        <div class="GroupText">Дата отправления</div>
+                        <div class="number">14.07</div>
+                    </div>
+                    <div class="price">80 000 Р</div>
+                </div>
+            </div>
+            <div class="container2">
+                <button class="button buttonMore L_buttonMore">Подробнее</button>
+                <div class="InfoBlock R_InfoBlock">
+                    
+                    <img class="image" src="images/neowise.jpg"alt="">
+
+                    <div class="textBlocks_infoBlock" id = "titltP">
+                        <div class="tourTitle">NEOWISE</div>
+                        <div class="tourSubtitle">комета</div>
+                        <p class="text" id="card">Тур предлагает уникальную возможность
+                            увидеть яркую комету, которая проходит близко к Земле </p>
+                            
+                        <p class="text" id="card">Вы сможете наблюдать этот редкий 
+                            астрономический объект через телескопы, узнать интересные факты о кометах и их происхождении</p>
+                    </div>
+
+                    <div class="textBlocks_infoBlock">
+                        <div class="tourTitle">Тур проводит</div>
+                        <p class="text">Астроном-любитель с 10-летним стажем, одна
+                            из кураторов проекта, опытный астрофотограф - Марина Кошкина</p>
+                    </div>
+
+                    <div class="textBlocks_infoBlock">
+                        <div class="tourTitle">Место проведения</div>
+                        <p class="text" style="white-space: pre-line;">Республика Дагестан, село Гельхен –
+                            Благодаря удаленности от больших городов световое загрязнение почти полностью отсутствует</p>
+                    </div>
+
+                    <div class="textBlocks_infoBlock" style="margin-top: 0px;">
+                        <div class="tourTitle">Проживание</div>
+                        <p class="text">Палатки под открытым небом ночью, хостел днём </p>
+                    </div>
+
+                    <div class="textBlocks_infoBlock" style="margin-top: 0px;">
+                        <button class="buttonBook">Бронировать</button>
+                    </div>
+                    
+                    
+                </div>
+                <div class="PriceBlock L_PriceBlock">
+                    <div class="sizeofGroup">
+                        <div class="GroupText">Количество человек в группе</div>
+                        <div class="number">20-25</div>
+                    </div>
+                    <div class="sizeofGroup">
+                        <div class="GroupText">Дата отправления</div>
+                        <div class="number">27.03</div>
+                    </div>
+                    <div class="price">110 000 Р</div>
+                </div>
+            </div>
+            <div class="container">
+                <button class="button buttonMore">Подробнее</button>
+                <div class="InfoBlock L_InfoBlock">
+                    
+                    <img class="image" src="images/mars.jpg" alt="">
+
+                    <div class="textBlocks_infoBlock" id = "titltP">
+                        <div class="tourTitle">Марс</div>
+                        <div class="tourSubtitle">планета</div>
+                        <p class="text" id="card">Возможность увидеть Красную Планету 
+                            через телескопы с профессиональным астрономом </p>
+                            
+                        <p class="text" id="card">Участники смогут получить уникальные фотографии Марса
+                            и узнать о последних исследованиях</p>
+                    </div>
+
+                    <div class="textBlocks_infoBlock">
+                        <div class="tourTitle">Тур проводит</div>
+                        <p class="text">Астроном-любитель с 10-летним стажем, одна
+                            из кураторов проекта, опытный астрофотограф - Марина Кошкина</p>
+                    </div>
+
+                    <div class="textBlocks_infoBlock">
+                        <div class="tourTitle">Место проведения</div>
+                        <p class="text" style="white-space: pre-line;">Республика Дагестан, село Гельхен –
+                            Благодаря удаленности от больших городов световое загрязнение почти полностью отсутствует</p>
+                    </div>
+
+                    <div class="textBlocks_infoBlock" style="margin-top: 0px;">
+                        <div class="tourTitle">Проживание</div>
+                        <p class="text">Палатки под открытым небом ночью, хостел днём </p>
+                    </div>
+
+                    <div class="textBlocks_infoBlock" style="margin-top: 0px;">
+                        <button class="buttonBook">Бронировать</button>
+                    </div>
+                    
+                    
+                </div>
+                <div class="PriceBlock R_PriceBlock">
+                    <div class="sizeofGroup">
+                        <div class="GroupText">Количество человек в группе</div>
+                        <div class="number">15-20</div>
+                    </div>
+                    <div class="sizeofGroup">
+                        <div class="GroupText">Дата отправления</div>
+                        <div class="number">14.07</div>
+                    </div>
+                    <div class="price">80 000 Р</div>
+                </div>
+            </div>
+        </section>
+
+        <div id="line">__</div>
+        
+        <section id="equipment">
+            <div class="EquipmentBackgr">
+                <div class="EquipmentBackgr_title">Наше Оборудование</div>
+                <div class="EquipmentBackgr_text">Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+
+                <div class="EquipmentContainer">
+                    <div class="Equipment_info_block" id="LT-block">
+                        <div class="block_text" style="text-align: right;">MEADE POLARIS
+                            114 ММ</div>
+                        <img src="images/телескоп2.png" class="telescope" alt="">
+                    </div>
+                    <div class="Equipment_info_block" id="LB-block">
+                        <img src="images/телескоп3.png" class="telescope" alt="">
+                        <div class="block_text">Meade 12" LX90-ACF</div>
+                    </div>
+                    <img src="icons/starEq.svg" class="Equipment_star" alt="">
+                    <div class="Equipment_info_block" id="RT-block">
+                        <img src="images/телескоп1.png" class="telescope" alt="">
+                        <div class="block_text">Celestron Advanced
+                            VX 9,25" S</div>
+                    </div>
+                    <div class="Equipment_info_block" id="RB-block">
+                        <div class="block_text" style="text-align: right; width: 30%">Sky-Watcher
+                            Dob 10"</div>
+                        <img src="images/телескоп4.png" class="telescope" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="curators">
+            <div class="curatorsTitle">
+                <div class="curText">Вам помогут</div>
+            </div>
+            <div class="curators">
+                <div class="CuratorContainer">
+                    <img src="images/curator1.png" class="avatar" alt="">
+                    <div class="name">Виталий Булкин</div>
+                    <div class="descript">астроном с 20-летним стажем</div>
+                    <button class="button_Descript" onclick = "window.location.replace('pages/WIP_parallax.html')">узнать больше</button>
+                </div>
+                
+                <div class="CuratorContainer">
+                    <img src="images/curator2.png" class="avatar" alt="">
+                    <div class="name">Марина Кошкина</div>
+                    <div class="descript">астроном с 20-летним стажем</div>
+                    <button class="button_Descript" onclick = "window.location.replace('pages/WIP_parallax.html')">узнать больше</button>
+                </div>
+
+                <div class="CuratorContainer">
+                    <img src="images/curator3.png" class="avatar" alt="">
+                    <div class="name">Евгений Конфеткин</div>
+                    <div class="descript">астроном с 20-летним стажем</div>
+                    <button class="button_Descript" onclick = "window.location.replace('pages/WIP_parallax.html')">узнать больше</button>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-
+        <form class="footerForm" action = "pages/WIP_parallax.html">
+            <div id="footerText">Подпишитесь на рассылку, чтобы получать
+                уведомления о предстоящих поездках</div>
+            <input type = "email" placeholder = "E-mail" id = "email_Input" required>
+            <button id="followB">Подписаться</button>
+    
+        </form>
     </footer>
+
+    <script src = "scripts/main.js"></script>
     <script src = "scripts/preloader.js"></script>
 </body>
 </html>
