@@ -220,10 +220,10 @@ a:visited{
 }
 .banner_content{
     display: block;
-    position: absolute !important; 
-
+    position: absolute;
     width: 90%;
-    left:5%;
+    height:100%;
+    margin-left:5%;
    
 
 }
