@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact us</title>
     <link rel = "stylesheet" href = "../style.css">
     <link rel="stylesheet" href="../styles/contacts.css">
-    <link rel = 'icon' type = 'image/x-icon' href = 'icons/favicon.ico'>
+    <link rel = 'icon' type = 'image/x-icon' href = '../icons/favicon.ico'>
 
 </head>
 <body>
         <div id = "preloader">
         
         </div>
-        <form>
+        <form action = "WIP_parallax.html">
             <div id = "login_window">
                 <div id = "login_box">
                     <h3 style = "text-align: center;">Войти в аккаунт</h3>
@@ -22,7 +22,7 @@
                         <input type = "password" placeholder = "PASSWORD" id = "password_input" required minlength="5">
                         <div id = "button_container">
                             <button type = "submit"  id = "login_button" > Войти </button>
-                            <button type = "submit"  id = "sign_up_button" > Регистрация </button>
+                            <button type = "submit"  id = "sign_up_button"  > Регистрация </button>
                         </div>
                         <button id ="login_cancel" onclick = "document.getElementById('login_window').style.display = 'none'; console.log('disabling login')" type = "reset">Отминет</button>
                     </div>
@@ -123,7 +123,7 @@
                             <p>8(800)555-35-35</p>
                         </div>
                         <div>
-                            <h4>Урюпинск</h4>
+                            <h4>Саратов</h4>
                             <p>8(800)555-35-35</p>
                         </div>
                     </div>
@@ -135,6 +135,13 @@
     <footer>
         <script src = '../scripts/preloader.js'></script>
         <script src = "../scripts/main.js"></script>
+        <form class="footerForm" action = "WIP_parallax.html">
+            <div id="footerText">Подпишитесь на рассылку, чтобы получать
+                уведомления о предстоящих поездках</div>
+            <input type = "email" placeholder = "E-mail" id = "email_Input" required>
+            <button id="followB">Подписаться</button>
+    
+        </form>
     </footer>
     
 </body>

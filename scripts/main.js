@@ -1,14 +1,24 @@
 
+let screen_width = window.screen.width;
+
+/*
+@param {string} id - id элемента который нужно активировать/отключить
+*/
 function activate_menu(id){
+  if(screen_width > 600){
     el = document.getElementById(id);
     el.style.visibility = "visible";
+  }
 }
 
 function deactivate_menu(id){
+  if(screen_width > 600){
     el = document.getElementById(id);
     el.style.visibility = "hidden";
+  }
     
 }
+
 let mybutton = document.getElementById("up_button");
 
 window.onscroll = function() {scrollFunction()};

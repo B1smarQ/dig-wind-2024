@@ -13,7 +13,7 @@
     <div id = "preloader">
 
     </div>
-    <form>
+    <form action = "pages/WIP_parallax.html">
         <div id = "login_window">
             <div id = "login_box">
                 <h3 id = "login_title">Войти в аккаунт</h3>
@@ -21,7 +21,7 @@
                     <input type = "email" placeholder = "example@example.com" id = "login_input" required>
                     <input type = "password" placeholder = "PASSWORD" id = "password_input" required minlength="5">
                     <div id = "button_container">
-                        <button type = "submit"  id = "login_button" > Войти </button>
+                        <button type = "submit"  id = "login_button"  > Войти </button>
                         <button type = "submit"  id = "sign_up_button" > Регистрация </button>
                     </div>
                     <button id ="login_cancel" onclick = "document.getElementById('login_window').style.display = 'none'; console.log('disabling login')" type = "reset">Отменон</button>
@@ -60,7 +60,7 @@
                     <a href = "pages/WIP_parallax.html">Отзывы</a>
                 </div>
                 <div class = "link_container">
-                    <a href = "pages/WIP_parallax.html">Контакты</a>
+                    <a href = "pages/contacts.html">Контакты</a>
                 </div>
             </div>
             <div class = "link_container" style="margin: 0;">
@@ -69,13 +69,15 @@
             </div>
         </nav>
         
-        <div class = "banner " id = "top"></div>
-        <div class = "banner_content ">
-            <div class = "Title" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
-                <div class="upH">Любишь смотреть на звезды? Присоединяйся к нам!</div>
-                <div class="HH">SKY EXPEDITION</div>
+        <div class = "banner " id = "top">
+            <div class = "banner_content ">
+                <div class = "Title" onmouseover = "deactivate_menu('main_sub_menu'); deactivate_menu('about_sub_menu')">
+                    <div class="upH">Любишь смотреть на звезды? Присоединяйся к нам!</div>
+                    <div class="HH">SKY EXPEDITION</div>
+                </div>
             </div>
         </div>
+        
         <div id = "bottom_sub_menu">
             <nav class = "anchors">
                 <a href = "#expeditions">Экспедиции</a>
@@ -313,28 +315,28 @@
                     <img src="images/curator1.png" class="avatar" alt="">
                     <div class="name">Виталий Булкин</div>
                     <div class="descript">астроном с 20-летним стажем</div>
-                    <button class="button_Descript">узнать больше</button>
+                    <button class="button_Descript" onclick = "window.location.replace('pages/WIP_parallax.html')">узнать больше</button>
                 </div>
                 
                 <div class="CuratorContainer">
                     <img src="images/curator2.png" class="avatar" alt="">
                     <div class="name">Марина Кошкина</div>
                     <div class="descript">астроном с 20-летним стажем</div>
-                    <button class="button_Descript">узнать больше</button>
+                    <button class="button_Descript" onclick = "window.location.replace('pages/WIP_parallax.html')">узнать больше</button>
                 </div>
 
                 <div class="CuratorContainer">
                     <img src="images/curator3.png" class="avatar" alt="">
                     <div class="name">Евгений Конфеткин</div>
                     <div class="descript">астроном с 20-летним стажем</div>
-                    <button class="button_Descript">узнать больше</button>
+                    <button class="button_Descript" onclick = "window.location.replace('pages/WIP_parallax.html')">узнать больше</button>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <form class="footerForm">
+        <form class="footerForm" action = "pages/WIP_parallax.html">
             <div id="footerText">Подпишитесь на рассылку, чтобы получать
                 уведомления о предстоящих поездках</div>
             <input type = "email" placeholder = "E-mail" id = "email_Input" required>

@@ -82,6 +82,7 @@ body{
     z-index: 100;
 }
 .banner{
+    position: relative;
     z-index: 1;
     background-image: url("images/main_background.png");
     width:100dvw;
@@ -90,10 +91,15 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
 
-    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
-    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    mask-image: -webkit-gradient(linear, left top, left bottom, 
-    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+.banner::before{
+    content:' ';
+    width:100%;
+    position:absolute ;
+    height:100px;
+    background: linear-gradient(transparent,black);
+    bottom:0;
+    
 }
 .link_container{
     text-align: center;
@@ -118,9 +124,27 @@ body{
 }
 
 @media screen and (max-width:900px) {
+    #login{
+        display: none;
+    }
+    .upH{
+        display: none;
+    }
+    .HH{
+        font-size:2em !important;
+    }
     #links{
         flex-direction: column;
         margin-bottom:100px;
+    }
+    .link_container{
+        width:90dvw;
+        margin-right:5dvw;
+        border-radius: 0;
+
+    }
+    .pages_bar{
+        justify-content: space-around;
     }
 }
 
@@ -199,11 +223,9 @@ a:visited{
     position: absolute !important; 
 
     width: 90%;
-    left: 5%;
-    right: 5%;
-    bottom: 70%;
+    left:5%;
+   
 
-    top: 62px;
 }
 #bottom_sub_menu{
     background-color: #191F23;
@@ -386,9 +408,12 @@ button {
     border-radius: 30px;
     border: 0;
 }
+<<<<<<< HEAD
 
 /* FOOTER */
 
+=======
+>>>>>>> b01032f9d385a0a313f3859fce6c431e7187028b
 footer {
     width: 100%;
     background-color: #07090A;
@@ -437,6 +462,7 @@ footer {
 #followB:hover {
     background-color: #C56E34;
 }
+<<<<<<< HEAD
 
 @media (max-width: 1000px) {
     #email_Input {
@@ -449,3 +475,5 @@ footer {
         width: 80%;
     }
 }
+=======
+>>>>>>> b01032f9d385a0a313f3859fce6c431e7187028b
