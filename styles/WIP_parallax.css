@@ -166,8 +166,8 @@ section::before{
     header ul{
         flex-direction: column;
     }
-    header ul li{
-        -webkit-text-stroke-width:1px ;
+    header ul li a{
+        -webkit-text-stroke-width:0.5px ;
         -webkit-text-stroke-color: black;
     }
 }

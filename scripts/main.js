@@ -1,14 +1,14 @@
 
-let screen_width = window.innerWidth;
+let screen_width = window.screen.width;
 function activate_menu(id){
-  if(screen_height > 600){
+  if(screen_width > 600){
     el = document.getElementById(id);
     el.style.visibility = "visible";
   }
 }
 
 function deactivate_menu(id){
-  if(screen_height > 600){
+  if(screen_width > 600){
     el = document.getElementById(id);
     el.style.visibility = "hidden";
   }
