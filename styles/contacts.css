@@ -2,20 +2,24 @@
     font-family: 'Yanone';
     src: url('../fonts/YanoneKaffeesatz-Light.ttf');
 }
-@font-face {
-    font-family: 'Bahnscrift';
-    src: url('../fonts/Bahnschrift.ttf');
-}
 
 #contacts_container{
-    margin-top:10%;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    margin-top:8%;
+    margin-bottom: 10%;
     margin-left:10%;
     margin-right:10%;
+
     width:80%;
     
+}
+#map {
+    margin-right: 50px;
+    width: 50%;
 }
 #Rev_pages_bar {
     background-color: #07090A;
@@ -87,14 +91,15 @@ body{
     color:white;
 }
 #social_networks{
-    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:60%;
     margin-right:10%;
-    margin-left:10%;
 }
 #contacts_container iframe{
     border-radius: 30px;
-    width:40dvw;
-    height:40dvh;
+
 }
 nav a:hover #TG{
     stroke:#DC9F75;
@@ -108,38 +113,102 @@ nav a:hover #YT path{
 
 #contact_info{
     display: flex;
+    height: 250px;
     flex-direction: row;
-    width:80%;
 }
-nav{
+#emailAdress{
+    background-color: #0C0F11;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    
+
+    border-radius: 30px;
+    min-width: 240px;
+    max-width: 310px;
+    height: 45px;
+    align-items: center;
+}
+#emailAdress div {
+    color: #7F7F7F;
+}
+
+#socials_links{
     background-color: #0C0F11;
     display: flex;
     justify-content: space-around;
     border-radius: 30px;
-    min-width:50%;
-    min-height: 45px;
+
+    max-width: 200px;
+    height: 45px;
     align-items: center;
 }
 nav p{
     color:#7F7F7F;
+    margin: 0;
 }
 #information{
-    width:50%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     
     justify-items: center;
-    align-items: center;
+    /* align-items: center; */
 }
 #information h2{
     color:white;
-    text-align: center;
-    font-size:2em;
+    font-size: 40px;
+    margin-top: 0;
+    font-weight: 300;
 }
 h3{
-    font-size:1.5em;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0;
 }
 h4{
-    font-size:1.5em;
+    margin-bottom: 20px;
+    font-size: 15px;
     color:#7F7F7F;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.phoneNumb {
+    font-size: 20px;
+    color: white;
+}
+
+#phone {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+    #contacts_container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 950px) {
+    #contacts_container {
+        flex-direction: column;
+    }
+    #map {
+        width: 80%;
+        height: 400px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #information {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
 }
