@@ -1,0 +1,126 @@
+#Rev_pages_bar {
+    background-color: #07090A;
+    margin: 0;
+    padding-left: 5dvw;
+    padding-right: 5dvw;
+}
+.Rev_link_container {
+    background-color: #07090A;
+}
+
+.revTitle {
+    margin-top: 100px;
+    border-radius: 30px;
+
+    height: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    background-color: #0C0F11;
+}
+.revText {
+    border-radius: 30px;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #191F23;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    line-height: 50px;
+
+    height: 50px;
+    width: 400px;
+}
+
+
+.ReviewsScrollBar {
+    display: flex;
+    height: 400px;
+
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    overflow-x: auto;
+}
+
+.revContainer {
+    display: flex;
+    width: 580px;
+    height: 380px;
+
+    background-color: #191F23;
+    border-radius: 30px;
+
+    margin-right: 50px;
+
+    flex: 0 0 auto;
+}
+.photo {
+    width: 274px;
+
+    border-radius: 30px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.name {
+    color: white;
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+.aboutPerson {
+    text-align: center;
+    color: #aeaeae;
+    font-size: 15px;
+
+    margin-bottom: 15px;
+}
+.stars {
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+.starFill {
+    width: 23px;
+    height: 23px;
+    background-image: url(../icons/starFill.svg);
+}
+.starBorder {
+    width: 23px;
+    height: 23px;
+    background-image: url(../icons/starBorder.svg);
+}
+.reviewText {
+    color: white;
+    font-size: 20px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 5px;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #191F23;
+    border-radius: 5px;
+}

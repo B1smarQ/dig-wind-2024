@@ -5,39 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href = "../style.css">
+    <link rel = "stylesheet" href = "../styles/reviews.css">
 </head>
 <body>
     <header>
         <noscript>
             <img src = "../images/No_js_err.png">
         </noscript>
-        <<noscript>
+        <noscript>
             <img src = "images/No_js_err.png">
         </noscript>
-        <nav>
-            
-            <div class = "link_container" id = "main_menu" onfocus="activate_menu('main_sub_menu')">
-                <a href = "../index.html">Главная</a>
+        <nav class = "pages_bar" id="Rev_pages_bar">
+            <div class id = "links">
+                <div class = "link_container Rev_link_container" id = "main_menu" onmouseover="activate_menu('main_sub_menu');deactivate_menu('about_sub_menu')" >
+                    <a href = "../index.html">Главная</a>
+                    <div id = "main_sub_menu" class = "sub_menu">
+                        <a href = "#expeditions"> Экспедиции</a>
+                        <a href = "#equipment"> Оборудование</a>
+                        <a href = "#curators"> Кураторы</a>
+                    </div>
+                </div>
+                <div class = "link_container Rev_link_container" id = "about_menu" onmouseover = "deactivate_menu('main_sub_menu');activate_menu('about_sub_menu')" >
+                    <a href = "about.html" > О нас</a>
+                    <div id = "about_sub_menu" class = "sub_menu">
+                        <a href = "pages/about.html#creators"> Основатели</a>
+                        <a href = "pages/about.html#team"> Команда</a>
+                        <a href = "pages/about.html#gallery"> Галерея</a>
+                    </div>
+                </div>
+                <div class = "link_container current_page Rev_link_container">
+                    <a href = "reviews.html">Отзывы</a>
+                </div>
+                <div class = "link_container Rev_link_container">
+                    <a href = "contacts.html">Контакты</a>
+                </div>
             </div>
-            <div class = "link_container" id = "about_menu" onfocus="deactivate_menu('main_sub_menu')">
-                <a href = "about.html" > О нас</a>
-            </div>
-            <div class = "link_container">
-                <a href = "reviews.html">Отзывы</a>
-            </div>
-            <div class = "link_container">
-                <a href = "contacts.html">Контакты</a>
-            </div>
-
-            <a id = "login">Авторизоваться</a>
+        </nav>
     </header>
 
     <main>
+        <section>
+            <div class="revTitle">
+                <div class="revText">Отзывы с наших поездок</div>
+            </div>
 
+            <div class="ReviewsScrollBar">
+                <div class="revContainer">
+                    <img class="photo" src="../images/отзывы1.jpg" alt="">
+                    <div class="textBlock">
+                        <div class="name">Евгения</div>
+                        <div class="aboutPerson">доцент кафедры биоинженерии МГУ, участвовала в туре “Персеиды”</div>
+                        <div class="stars">
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                        </div>
+                        <div class="reviewText">Тур Персеиды был невероятным! Мы смогли наблюдать за яркими метеорами,
+                            покрывающими ночное небо. Это был незабываемый опыт, который сделал нашу поездку по-настоящему
+                            особенной. 10/10, рекомендую!</div>
+                    </div> 
+                </div>
+
+                <div class="revContainer">
+                    <img class="photo" src="../images/отзывы2.jpg" alt="">
+                    <div class="textBlock">
+                        <div class="name">Марк</div>
+                        <div class="aboutPerson">режиссёр фильма “Звездные пути”, участвовал в туре “NEOWISE”</div>
+                        <div class="stars">
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                            <div class="starBorder"></div>
+                        </div>
+                        <div class="reviewText">У нас была возможность увидеть комету во всей ее красе
+                            благодаря высококачественным телескопам и опытным гидам, которые делились
+                            своими знаниями о космосе. Благодаря этому туру, я по-новому взглянул на
+                            небесные тела</div>
+                    </div> 
+                </div>
+
+                <div class="revContainer">
+                    <img class="photo" src="../images/отзывы3.jpg" alt="">
+                    <div class="textBlock">
+                        <div class="name">Светлана</div>
+                        <div class="aboutPerson">директор компании "Звездный", участвовала в туре “Персеиды”</div>
+                        <div class="stars">
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                        </div>
+                        <div class="reviewText">Тур был хорошим. Я засняла около сорока метеоров и довольна
+                            получившимися фотографиями. Кураторы помогали и рассказали много интересного. Рекомендую!</div>
+                    </div> 
+                </div>
+
+                <div class="revContainer">
+                    <img class="photo" src="../images/отзывы4.jpg" alt="">
+                    <div class="textBlock">
+                        <div class="name">Александр</div>
+                        <div class="aboutPerson">доктор медицинских наук, принимал участие в туре “Марс”</div>
+                        <div class="stars">
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                            <div class="starFill"></div>
+                            <div class="starBorder"></div>
+                        </div>
+                        <div class="reviewText">С удовольствием наблюдал за Марсом в дали от тяжелой работы.
+                            Но хотелось бы больше, поэтому пока 4 звезды. Нам, врачам, сложно понравиться</div>
+                    </div> 
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <footer>
-
+        <form class="footerForm" action = "pages/WIP_parallax.html">
+            <div id="footerText">Подпишитесь на рассылку, чтобы получать
+                уведомления о предстоящих поездках</div>
+            <input type = "email" placeholder = "E-mail" id = "email_Input" required>
+            <button id="followB">Подписаться</button>
+    
+        </form>
     </footer>
     
 </body>
