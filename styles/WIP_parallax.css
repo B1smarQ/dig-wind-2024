@@ -151,6 +151,7 @@ section::before{
 }
 
 #sec video{
+    width:80dvw;
     object-fit: center;
     border-radius: 30px;
 }

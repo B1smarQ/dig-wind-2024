@@ -258,4 +258,13 @@ h4{
     .photos_container_team{
         grid-template-columns: 1fr 1fr;
     }
+    #login{
+        display: none;
+    }
+    .upH{
+        display: none;
+    }
+    .HH{
+        font-size:2em;
+    }
 }

@@ -1,12 +1,17 @@
 
+let screen_width = window.innerWidth;
 function activate_menu(id){
+  if(screen_height > 600){
     el = document.getElementById(id);
     el.style.visibility = "visible";
+  }
 }
 
 function deactivate_menu(id){
+  if(screen_height > 600){
     el = document.getElementById(id);
     el.style.visibility = "hidden";
+  }
     
 }
 let mybutton = document.getElementById("up_button");

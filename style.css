@@ -82,6 +82,7 @@ body{
     z-index: 100;
 }
 .banner{
+    position: relative;
     z-index: 1;
     background-image: url("images/main_background.png");
     width:100dvw;
@@ -90,10 +91,15 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
 
-    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
-    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    mask-image: -webkit-gradient(linear, left top, left bottom, 
-    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+.banner::before{
+    content:' ';
+    width:100%;
+    position:absolute ;
+    height:100px;
+    background: linear-gradient(transparent,black);
+    bottom:0;
+    
 }
 .link_container{
     text-align: center;
@@ -118,9 +124,27 @@ body{
 }
 
 @media screen and (max-width:900px) {
+    #login{
+        display: none;
+    }
+    .upH{
+        display: none;
+    }
+    .HH{
+        font-size:2em !important;
+    }
     #links{
         flex-direction: column;
         margin-bottom:100px;
+    }
+    .link_container{
+        width:90dvw;
+        margin-right:5dvw;
+        border-radius: 0;
+
+    }
+    .pages_bar{
+        justify-content: space-around;
     }
 }
 
@@ -199,11 +223,9 @@ a:visited{
     position: absolute !important; 
 
     width: 90%;
-    left: 5%;
-    right: 5%;
-    bottom: 70%;
+    left:5%;
+   
 
-    top: 62px;
 }
 #bottom_sub_menu{
     background-color: #191F23;
