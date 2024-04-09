@@ -386,3 +386,51 @@ button {
     border-radius: 30px;
     border: 0;
 }
+footer {
+    width: 100%;
+    background-color: #07090A;
+}
+#email_Input {
+    width: 30%;
+    height: 40px;
+    background-color: #191F23;
+
+    border: 0;
+    border-radius: 30px;
+    padding-left: 30px;
+
+    margin-top: 30px;
+
+    color: white;
+}
+#footerText {
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+
+    text-align: center;
+    white-space: pre-line;
+}
+.footerForm {
+    display: flex;
+    flex-direction: column;
+
+    height: 270px;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+#followB {
+    background-color: #7C4D2D;
+    border-radius: 30px;
+    height: 40px;
+    width: 150px;
+
+    margin-top: 20px;
+
+    color: white;
+}
+#followB:hover {
+    background-color: #C56E34;
+}
