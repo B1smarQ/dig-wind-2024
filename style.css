@@ -308,7 +308,7 @@ p{
     position: fixed;
     width:100vw;
     height:100vh;
-    z-index: 100;
+    z-index: 10000;
     display: none;
     justify-content: center;
     align-items: center;
@@ -316,12 +316,13 @@ p{
     background-color: rgba(0,0,0,0.5);
 }
 #login_box{
-    width:40%;
-    height:40%;
+    width:50dvw;
+    height:50dvh;
     display: flex;
     flex-direction: column;
     background-color: #07090A;
     border-radius:30px;
+    justify-content: center;
 }
 
 #login_form{
