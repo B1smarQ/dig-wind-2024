@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "lib": ["DOM", "WebWorker", "ScriptHost", "es2019", "ES2019.Array"]
+    }
+}
