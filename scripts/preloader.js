@@ -1,4 +1,4 @@
-var loader = document.getElementById('preloader');
+let loader = document.getElementById('preloader');
 console.log("got loader");
 if (loader) {
     window.addEventListener('load', function () {

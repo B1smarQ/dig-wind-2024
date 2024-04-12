@@ -1,12 +1,12 @@
-var stars = document.getElementsByClassName("star");
-var output = document.getElementById("output");
-var preset_ratings = [5, 4, 4, 4, 5];
-var rating = 0;
+let stars = document.getElementsByClassName("star");
+let output = document.getElementById("output");
+let preset_ratings = [5, 4, 4, 4, 5];
+let rating = 0;
 function gfg(n) {
     remove();
     rating = 0;
-    var result;
-    for (var i = 0; i < n; i++) {
+    let result;
+    for (let i = 0; i < n; i++) {
         if (n == 1)
             cls = "one";
         else if (n == 2)
@@ -20,7 +20,7 @@ function gfg(n) {
         stars[i].className = "star " + cls;
     }
     preset_ratings.push(n);
-    for (var x = 0; x < preset_ratings.length; x++) {
+    for (let x = 0; x < preset_ratings.length; x++) {
         rating += preset_ratings[x];
         result = rating / preset_ratings.length;
     }
@@ -29,7 +29,7 @@ function gfg(n) {
         output.innerText = "Rating is: " + result + "/5";
 }
 function remove() {
-    var i = 0;
+    let i = 0;
     preset_ratings.splice(-1);
     while (i < 5) {
         stars[i].className = "star";

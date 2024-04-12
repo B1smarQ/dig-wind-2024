@@ -1,11 +1,11 @@
-var stars = document.getElementById('stars');
-var moon = document.getElementById('moon');
-var mountains_front = document.getElementById('mountains_front');
-var mountains_back = document.getElementById('mountains_behind');
-var text = document.getElementById('text');
-var max_parallax_length = window.screen.height - 300;
+let stars = document.getElementById('stars');
+let moon = document.getElementById('moon');
+let mountains_front = document.getElementById('mountains_front');
+let mountains_back = document.getElementById('mountains_behind');
+let text = document.getElementById('text');
+let max_parallax_length = window.screen.height - 300;
 window.addEventListener('scroll', function () {
-    var value = window.scrollY;
+    let value = window.scrollY;
     if (value < max_parallax_length && stars && moon && mountains_back && text && mountains_front) {
         stars.style.left = value + 'px';
         moon.style.top = value * 0.625 + 'px';
