@@ -18,5 +18,5 @@ function FadeFunction() {
     else{
         loader.style.display = "none";
     }
-    loader.style.opacity = opacity;
+    loader.style.opacity = String(opacity);
 }
