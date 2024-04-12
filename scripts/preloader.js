@@ -1,19 +1,20 @@
 var loader = document.getElementById('preloader');
 console.log("got loader");
-window.addEventListener('load', function(){
-    console.log("Loading");
-    this.setTimeout(function(){
-        FadeFunction();
-    },500);
-    
-})
+if (loader) {
+    window.addEventListener('load', function () {
+        console.log("Loading");
+        this.setTimeout(function () {
+            FadeFunction();
+        }, 500);
+    });
+}
 var opacity = 1;
 function FadeFunction() {
-    if (opacity>0) {
+    if (opacity > 0) {
         opacity -= .005;
-        setTimeout(function(){FadeFunction()},1);
+        setTimeout(function () { FadeFunction(); }, 1);
     }
-    else{
+    else {
         loader.style.display = "none";
     }
     loader.style.opacity = opacity;
