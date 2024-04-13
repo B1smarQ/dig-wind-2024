@@ -154,6 +154,7 @@ section::before{
     width:80dvw;
     object-fit: center;
     border-radius: 30px;
+    max-height:100dvh;
 }
 #licence{
     font-size:1em !important;
