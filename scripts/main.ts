@@ -1,22 +1,24 @@
 
 let screen_width:number;
-let mybutton;
+let mybutton:HTMLElement;
+let active_width:number;
 /*
 @param {string} id - id элемента который нужно активировать/отключить
 */
+active_width = 600;
 
 screen_width = window.screen.width
 function activate_menu(id){
-  let el = document.getElementById(id);
-  if(screen_width > 600 && el){
+  let el:HTMLElement = document.getElementById(id);
+  if(screen_width > active_width && el){
     
     el.style.visibility = "visible";
   }
 }
 
 function deactivate_menu(id){
-  let el = document.getElementById(id);
-  if(screen_width > 600 && el){
+  let el:HTMLElement = document.getElementById(id);
+  if(screen_width > active_width && el){
     el.style.visibility = "hidden";
   }
     
