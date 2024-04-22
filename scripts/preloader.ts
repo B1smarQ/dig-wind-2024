@@ -9,7 +9,7 @@ if(loader){
         
     })
 }
-var opacity = 1;
+let opacity = 1;
 function FadeFunction() {
     if (opacity>0) {
         opacity -= .005;

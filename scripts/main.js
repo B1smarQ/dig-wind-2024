@@ -1,18 +1,20 @@
-let screen_width;
-let mybutton;
+var screen_width;
+var mybutton;
+var active_width;
 /*
 @param {string} id - id элемента который нужно активировать/отключить
 */
+active_width = 600;
 screen_width = window.screen.width;
 function activate_menu(id) {
-    let el = document.getElementById(id);
-    if (screen_width > 600 && el) {
+    var el = document.getElementById(id);
+    if (screen_width > active_width && el) {
         el.style.visibility = "visible";
     }
 }
 function deactivate_menu(id) {
-    let el = document.getElementById(id);
-    if (screen_width > 600 && el) {
+    var el = document.getElementById(id);
+    if (screen_width > active_width && el) {
         el.style.visibility = "hidden";
     }
 }
@@ -32,20 +34,20 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     setTimeout(function () {
-        const shown_elements = document.querySelectorAll('.show');
-        shown_elements.forEach(element => {
+        var shown_elements = document.querySelectorAll('.show');
+        shown_elements.forEach(function (element) {
             element.classList.remove('show');
         });
     }, 500);
 }
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         }
     });
 });
-const hidden_elements = document.querySelectorAll('.hidden');
-hidden_elements.forEach(element => {
+var hidden_elements = document.querySelectorAll('.hidden');
+hidden_elements.forEach(function (element) {
     observer.observe(element);
 });
