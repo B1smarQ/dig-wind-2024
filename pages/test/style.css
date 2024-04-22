@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    width:100vw;
+    height:100vh;
+    overflow-x: hidden;
+}
+
+#img-container{
+    display: flex;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(0,-50%);
+    gap:4vh;
+}
+#img-container >.image{
+    width:40vmin;
+    height:56vmin;
+    object-position:100% 50%;
+    object-fit: cover;
+}
