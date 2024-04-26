@@ -8,7 +8,7 @@ window.onmousemove = function (e) {
     var mouseDelta = parseFloat(track.dataset.mouseDown) - e.clientX, maxDelta = window.innerWidth / 2;
     var percentage = (mouseDelta / maxDelta) * -100, nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage;
     nextPercentage = Math.max(nextPercentage, -100);
-    nextPercentage = Math.min(0, nextPercentage);
+    nextPercentage = Math.min(1, nextPercentage);
     track.dataset.percentage = nextPercentage;
     track.animate({
         transform: track.style.transform = "translate(".concat(nextPercentage, "%,-50%)")
