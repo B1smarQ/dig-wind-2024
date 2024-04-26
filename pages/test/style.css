@@ -4,7 +4,23 @@ body{
     height:100vh;
     overflow-x: hidden;
 }
-
+header{
+    width:100dvw;
+    display:flex;
+    justify-content: center;
+}
+h1{
+    font-size:5em;
+    color:white;
+}
+footer{
+    width:100dvw;
+    display:flex;
+    justify-content: center;
+    position:absolute;
+    bottom:0;
+    height:min-content;
+}
 #img-container{
     display: flex;
     position:absolute;
