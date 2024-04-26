@@ -37,3 +37,7 @@ footer{
     object-fit: cover;
     transition:linear 1s;
 }
+#img-container >.image:hover{
+    width:50vmin;
+    height: 66vmin;
+}
