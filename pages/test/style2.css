@@ -36,8 +36,14 @@ footer{
     object-position:100% 50%;
     object-fit: cover;
     transition:linear 1s;
+    
+    -webkit-box-reflect: below 20px linear-gradient(transparent,black);
+    -webkit-filter:blur(1px);
+    filter:blur(1px);
 }
 #img-container >.image:hover{
     width:50vmin;
     height: 66vmin;
+    -webkit-filter:blur(0px);
+    filter:blur(0px);
 }
