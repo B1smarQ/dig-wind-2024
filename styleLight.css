@@ -1,0 +1,478 @@
+@font-face {
+    font-family: Bahnschrift;
+    src: url("fonts/Bahnschrift.ttf");
+}
+
+@font-face {
+    font-family: Porsche;
+    src: url("fonts/ofont.ru_Porsche.ttf");
+}
+
+@font-face {
+    font-family: Yanone;
+    src: url("fonts/YanoneKaffeesatz-Light.ttf");
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 5px;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #191F23;
+    border-radius: 5px;
+}
+
+.hidden{
+    opacity:0 ;
+    filter:blur(1px);
+    transform:translateY(50px);
+    -ms-filter: blur(1px);
+    transition: 1s linear !important;
+}
+
+.show{
+    transform:translateY(0px);
+    opacity: 1 !important;
+    filter:blur(0px);
+    -ms-filter: blur(0px);
+}
+#up_button{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    position:fixed;
+    right:50px;
+    bottom:25px;
+    
+}
+*{
+    font-family: 'Yanone';
+    font-size: 20px;
+}
+body{
+    margin:0px;
+    background-color: #E4E4ED;
+}
+.pages_bar{
+    display: flex;
+
+    font-size: 20px;
+
+    margin-left: 5dvw;
+    margin-right: 5dvw;
+    width: 90dvw;
+
+    justify-content: space-between;
+    align-items: center;
+}
+#preloader{
+    width:100dvw;
+    height:100dvh;
+    background: black url("images/loading.gif") center center no-repeat;
+    background-size: 100px;
+    position: fixed;
+    z-index: 100;
+}
+.banner{
+    position: relative;
+    z-index: 1;
+    background-image: url("images/main_background.png");
+    width:100dvw;
+    min-height: 550px;
+
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+.banner::before{
+    content:' ';
+    width:100%;
+    position:absolute ;
+    height:100px;
+    background: linear-gradient(transparent,black);
+    bottom:0;
+    
+}
+.link_container{
+    text-align: center;
+    line-height: 62px;
+
+    min-width: clamp(20px,150px,150px);
+    height: 62px;
+
+    background-color: #EFEFEF;
+
+    margin-right: 5dvw;
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    transition-property: background-color;
+    /* transition-duration: 0.5s; */
+    transition-timing-function: linear;
+}
+.link_container a{
+    color:black !important;
+}
+.current_page{
+    background-color: #FFFFFF !important;
+}
+@media screen and (max-width:900px) {
+    #login{
+        display: none;
+    }
+    .upH{
+        display: none;
+    }
+    .HH{
+        font-size:2em !important;
+    }
+    #links{
+        flex-direction: column;
+        margin-bottom:100px;
+    }
+    .link_container{
+        width:90dvw;
+        margin-right:5dvw;
+        border-radius: 0;
+
+    }
+    .pages_bar{
+        justify-content: space-around;
+    }
+}
+
+
+
+#links{
+    display: flex;
+    justify-content: space-between;
+}
+.link_container:hover{
+    background-color: #FFFFFF;
+}
+a{
+    /* min-width: 60px; */
+    text-decoration: none;
+    color:white;
+}
+a:visited{
+    color:white;
+}
+.sub_menus{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    
+    
+}
+.sub_menu{
+    position: absolute;
+    z-index: 3;
+
+    width: 200px;
+    line-height: 50px;
+
+    background-color: rgba(233, 233, 233, 0.79);
+    visibility: hidden;
+
+    border-radius: 0 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+
+    padding-left: 2%;
+    font-size:20px;
+
+    box-sizing: border-box;
+
+    /*box-shadow: #191F23 5px 5px 7px;*/
+
+    overflow: hidden;
+}
+.sub_menu >*{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.sub_menu a:hover{
+    color: #e2d5c9;
+}
+
+
+.upH {
+    color:white;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 15%;
+}
+.HH {
+    font-family: Porsche;
+    font-size: 90px;
+    color:white;
+    margin-bottom: 15%;
+}
+.banner_content{
+    display: block;
+    position: absolute;
+    width: 90%;
+    height:100%;
+    margin-left:5%;
+   
+
+}
+#bottom_sub_menu{
+    background-color: white;
+    height: 60px;
+
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index:10;
+}
+#contacts img{
+    margin-left:10px;
+    margin-right:20px;
+
+}
+#contacts{
+    display: flex;
+    align-items: center;
+}
+.anchors {
+    width:max-content;
+    /* height: 100%; */
+
+    justify-items: center;
+    display: flex;
+
+    vertical-align: middle;
+    justify-content: left;
+    align-items: center;
+
+    height: 60px;
+}
+
+.anchors a{
+    text-decoration: none;
+    color:black;
+
+    font-size: 20px;
+    text-align: center;
+
+    width: 150px;
+
+    height: 60px;
+    line-height: 60px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.anchors a:hover{
+    background-color: #EFEFEF;
+    border-bottom: solid 1px white;
+}
+
+main{
+    margin-top: 50px;
+}
+
+h3{
+    color:white;
+    font-size: 40px;
+}
+p{
+    color:white;
+    font-size:20px;
+}
+#login_title{
+    
+    text-align: center;
+    width:100%;
+    font-size: 40px !important;
+}
+
+#login_window{
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    z-index: 10000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(0,0,0,0.5);
+}
+#login_box{
+    width:50dvw;
+    height:50dvh;
+    display: flex;
+    flex-direction: column;
+    background-color: #07090A;
+    border-radius:30px;
+    justify-content: center;
+}
+
+#login_form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+    
+}
+#login_form input{
+    width: 50%;
+    color:white;
+    margin-bottom: 20px;
+    background-color: #191F23;
+    min-height:50px;
+    font-size:20px;
+    border-radius: 30px;
+    border: none;
+}
+
+#login_button{
+    width: 50%;
+    font-size:20px;
+    color:white;
+    border:solid white 1px;
+    background-color: #191F23;
+    border-radius: 30px;
+    border-spacing: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition:0.25s linear;
+    text-align: center;
+}
+
+#login_button:hover{
+    border-color:#7C4D2D;
+    background-color: #7C4D2D;
+}
+
+#sign_up_button{
+    width: 50%;
+    font-size:20px;
+    margin-bottom: 20px;
+    background-color: #191F23;
+    color:white;
+    border:solid white 1px;
+    border-radius: 30px;
+    border-spacing: 10px;
+    padding: 10px;
+    transition:0.25s linear;
+    text-align: center;
+}
+
+#sign_up_button:hover{
+    border-color:#7C4D2D;
+    background-color: #7C4D2D;
+}
+#login_cancel{
+    width: 50%;
+    font-size:20px;
+    margin-bottom: 20px;
+    background-color: #191F23;
+    color:white;
+    border:solid white 1px;
+    border-radius: 30px;
+    border-spacing: 10px;
+    padding: 10px;
+    transition:0.25s linear;
+    text-align: center;
+}
+#login_cancel:hover{
+    border-color:#7C4D2D;
+    background-color: #7C4D2D;
+}
+
+#button_container{
+    display: flex;
+    width:50%;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 30px;
+    border: 0;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: #3E4C56;
+}
+#email_Input {
+    width: 30%;
+    height: 40px;
+    background-color: #191F23;
+
+    border: 0;
+    border-radius: 30px;
+    padding-left: 30px;
+
+    margin-top: 30px;
+
+    color: white;
+}
+#footerText {
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+
+    text-align: center;
+    white-space: pre-line;
+}
+.footerForm {
+    display: flex;
+    flex-direction: column;
+
+    height: 270px;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+#followB {
+    background-color: #7C4D2D;
+    border-radius: 30px;
+    height: 40px;
+    width: 150px;
+
+    margin-top: 20px;
+
+    color: white;
+}
+#followB:hover {
+    background-color: #C56E34;
+}
+
+@media (max-width: 1000px) {
+    #email_Input {
+        width: 60%;
+    }
+}
+
+@media (max-width: 730px) {
+    #email_Input {
+        width: 80%;
+    }
+}

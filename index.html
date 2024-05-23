@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sky Expedition</title>
-    <link rel = "stylesheet" href = "style.css">
-    <link rel = "stylesheet" href = "styles/main.css">
+    <link rel = "stylesheet" href = "style.css" id = 'style-link1'>
+    <link rel = "stylesheet" href = "styles/main.css" id = 'style-link2'>
     <link rel = 'icon' type = 'image/x-icon' href = 'icons/favicon.ico'>
     
 </head>
@@ -54,6 +54,7 @@
                         <a href = "pages/about.html#creators"> Основатели</a>
                         <a href = "pages/about.html#team"> Команда</a>
                         <a href = "pages/about.html#gallery"> Галерея</a>
+                        
                     </div>
                 </div>
                 <div class = "link_container">
@@ -67,6 +68,7 @@
                 <img src = "icons/account.svg">
                 <a onclick = "document.getElementById('login_window').style.display = 'flex'" href = "#">Авторизоваться</a>
             </div>
+            <button id = 'theme_swap'>Theme</button>
         </nav>
         
         <div class = "banner " id = "top">
@@ -103,12 +105,12 @@
         <section class="hello">
             <div class="enjoyBlock">
                 <div class="Hh">Хотите в необычный тур? Вы по адресу!</div>
-                <p class="text">Мы предоставляем возможность участвовать
+                <p class="text" style = 'color:white'>Мы предоставляем возможность участвовать
                     в ночных наблюдениях под руководством 
                     опытных астрономов, c использованием 
                     профессионального
                     оборудования </p>
-                <p class="text">
+                <p class="text" style = 'color:white'>
                     Путешествие с нами станет незабываемым 
                     опытом для всех, кто увлечен космосом и хочет
                     погрузиться в его мир</p>
@@ -347,5 +349,6 @@
 
     <script src = "scripts/main.js"></script>
     <script src = "scripts/preloader.js"></script>
+    <script src = 'scripts/themeChange.js'></script>
 </body>
 </html>
